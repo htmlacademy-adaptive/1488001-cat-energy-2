@@ -14,7 +14,9 @@
     <div class="container">
       <a class="header__logo" href="#">
         <picture>
-          <img class="header__logo-image" src="#" alt="Логотип Cat Energy.">
+          <source media="(max-width: 767px)" width="33" height="38" type="image/svg+xml" srcset="./images/logo-mobile.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo-tablet.svg">
+          <img class="header__logo-image" src="./images/logo-desktop.svg" width="70" height="59" alt="Логотип сайта Cat Energy.">
         </picture>
       </a>
       <nav class="header__nav nav">
