@@ -1,0 +1,34 @@
+.example {
+  background-color: $bg-color-basic-grey2;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $font-color-basic-black;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.example-list__content {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $font-color-basic-black;
+}
+
+.example-list__caption {
+  font-size: 12px;
+  line-height: 1;
+}
+

@@ -2,7 +2,16 @@
 @import "./common/variables";
 @import "./common/mixins";
 @import "./common/fonts";
+@import "./common/common";
 @import "./common/global";
 
 /* BLOCKS */
 @import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/nav-list";
+@import "./blocks/hero";
+@import "./blocks/programs";
+@import "./blocks/how";
+@import "./blocks/example";
+@import "./blocks/costs";
+@import "./blocks/footer";
