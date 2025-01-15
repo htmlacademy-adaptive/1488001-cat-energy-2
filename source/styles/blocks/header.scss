@@ -1,5 +1,19 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-image: url("./../../images/logo-text.svg");
+  background-position: 54% 24px;
+  background-size: 101px 18px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 65px;
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 0;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 21px;
 }
