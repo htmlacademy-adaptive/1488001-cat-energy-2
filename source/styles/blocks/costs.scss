@@ -1,6 +1,12 @@
+.costs {
+  display: flex;
+  width: 186px;
+  margin: 0 auto;
+}
+
 .costs__title,
 .costs__content {
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

@@ -18,9 +18,12 @@
     <div class="container">
       <a class="header__logo" href="#">
         <picture>
-          <source media="(min-width: 1440px)" width="202" height="59" type="image/svg+xml" srcset="./images/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="./images/logo-tablet.svg">
-          <img class="header__logo-image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
+          <source media="(min-width: 1440px)" width="202" height="59" type="image/svg+xml"
+            srcset="./images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml"
+            srcset="./images/logo-tablet.svg">
+          <img class="header__logo-image" src="./images/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Cat Energy.">
         </picture>
       </a>
       <nav class="header__nav nav">
@@ -60,13 +63,15 @@
         <ul class="programs__list">
           <li class="programs__item programs__item--slim">
             <h3 class="programs__title">Похудение</h3>
-            <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+            <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+              на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="#">Каталог slim</a>
           </li>
           <li class="programs__item programs__item--gain">
             <h3 class="programs__title">Набор массы</h3>
-            <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
+            <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет
               вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="#">Каталог pro</a>
           </li>
@@ -102,7 +107,8 @@
           Живой пример
         </h2>
         <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <ul class="example-list">
           <li class="example-list__item">
@@ -119,12 +125,20 @@
           <p class="costs__content">15 000 руб.</p>
         </div>
         <div class="example__demo">
-          <div class="slider-container">
-            <div class="image-wrapper">
-              <img src="./images/cat-before@1x.png" class="image image-left" alt="Толстенький котик">
-              <img src="./images/cat-after@1x.png" class="image image-right" alt="Стройненький котик">
+          <div class="slider slider-container">
+            <div class="slider__wrapper    image-wrapper">
+              <div class="slider__screen slider__screen--before">
+                <picture>
+                  <img src="./images/cat-before@1x.png" class="image image-left" alt="Толстенький котик">
+                </picture>
+              </div>
+              <div class="slider__screen slider__screen--after">
+                <picture>
+                  <img src="./images/cat-after@1x.png" class="image image-right" alt="Стройненький котик">
+                </picture>
+              </div>
             </div>
-            <div class="slider-bar"></div>
+            <div class="slider__bar slider-bar"></div>
           </div>
         </div>
       </div>
@@ -144,30 +158,34 @@
       </div>
     </div>
     <div id="map" class="footer__map">
-      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198339!2d30.320472477539116!3d59.9387191620933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1737383691921!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="container">
       <div class="footer__details">
         <img class="footer__logo" width="128" height="24" src="./images/logo.jpg" alt="Логотип Cat Energy.">
+        <ul class="footer__socials social-list">
+          <li class="social-list__item social-list__item--vk">
+            <a href="#" class="social-list__link social-list__link--vk"></a>
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+          </li>
+          <li class="social-list__item social-list__item--youtube">
+            <a href="#" class="social-list__link social-list__link--youtube"></a>
+            <span class="visually-hidden">Мы на YouTube</span>
+          </li>
+          <li class="social-list__item social-list__item--telegram">
+            <a href="#" class="social-list__link social-list__link--telegram"></a>
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <div class="footer__copyright-name">HTML Academy</div>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#666666" />
+          </svg>
+        </div>
       </div>
-      <ul class="footer__socials social-list">
-        <li class="social-list__item social-list__item--vk">
-          <span class="visually-hidden">Мы в ВКонтакте</span>
-        </li>
-        <li class="social-list__item social-list__item--youtube">
-          <span class="visually-hidden">Мы на YouTube</span>
-        </li>
-        <li class="social-list__item social-list__item--telegram">
-          <span class="visually-hidden">Мы в Телеграме</span>
-        </li>
-      </ul>
-      <div class="footer__copyright">
-        <div class="footer__copyright-name">HTML Academy</div>
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666" />
-        </svg>
-      </div>
-    </div>
     </div>
   </footer>
 
