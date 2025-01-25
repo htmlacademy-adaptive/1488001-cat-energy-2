@@ -23,9 +23,25 @@
   line-height: 20px;
 }
 
-.footer__map {
+.footer__map-wrapper {
+  position: relative;
+  height: 362px;
+}
+
+.footer__map iframe {
   width: 100%;
-  height: auto;
+  height: 362px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.footer__map-picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
 }
 
 .footer__details {
@@ -36,12 +52,21 @@
 .footer__logo {
   width: 128px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
-.footer__socials {
+.footer__socials-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid $border-color-basic-grey;
   border-bottom: 1px solid $border-color-basic-grey;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 40px;
+  text-decoration: none;
+  color: $font-color-special-darkgrey;
 }

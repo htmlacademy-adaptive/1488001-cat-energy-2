@@ -1,33 +1,16 @@
+// БУРГЕР-МЕНЮ
+const nav = document.querySelector('.nav');
+const navToggle = document.querySelector('.nav__toggle');
+
+nav.classList.add('nav--closed');
+
+navToggle.addEventListener('click', ()=> {
+  nav.classList.toggle('nav--closed');
+  nav.classList.toggle('nav--opened');
+});
+
 // СЛАЙДЕР СО ШТОРКОЙ
 
-const sliderContainer = document.querySelector('.slider-container');
-const sliderBar = document.querySelector('.slider-bar');
-const imageRight = document.querySelector('.slider__screen--after');
-
-let isDragging = false;
-
-sliderContainer.addEventListener('mousedown', (e) => {
-  isDragging = true;
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-
-  const containerRect = sliderContainer.getBoundingClientRect();
-  let offsetX = e.clientX - containerRect.left;
-
-  // Ограничение движения в пределах контейнера
-  offsetX = Math.max(0, Math.min(offsetX, containerRect.width));
-
-  // Перемещение шторки
-  const percentage = (offsetX / containerRect.width) * 100;
-  sliderBar.style.left = `${percentage}%`;
-  imageRight.style.clipPath = `inset(0 0 0 ${percentage}%)`;
-});
 
 
 // // КАРТА С ПОЛЬЗОВАТЕЛЬСКОЙ МЕТКОЙ

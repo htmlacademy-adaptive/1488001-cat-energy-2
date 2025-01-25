@@ -9,5 +9,90 @@
   top: -45px;
   right: 20px;
   border: none;
-  background-color: red;
+  background-image: url("./../../icons/icon-burger-closed.svg");
+  display: none;
+}
+
+.nav--closed .nav__toggle {
+  display: block;
+
+  @media(min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+  background-image: url("./../../icons/icon-burger-open.svg");
+
+  @media(min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid $border-color-basic-grey3;
+
+  @media(min-width: $tablet)  {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0 34px;
+    border-top: none;
+    margin-right: 26px;
+  }
+}
+
+.nav--closed .nav__list {
+  display: none;
+
+  @media(min-width: $tablet)  {
+    display: flex;
+    margin-right: 26px;
+  }
+}
+
+.nav--opened .nav__list {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $bg-color-basic-white;
+
+  @media(min-width: $tablet)  {
+    display: flex;
+    position: static;
+    margin-right: 26px;
+  }
+}
+
+.nav__item {
+  border-bottom: 1px solid $border-color-basic-grey3;
+
+  @media(min-width: $tablet) {
+    border-bottom: none;
+  }
+}
+
+.nav__link {
+  font-family: $Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  display: block;
+  padding: 22px 5px 23px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $font-color-basic-black;
+
+  @media(min-width: $tablet) {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

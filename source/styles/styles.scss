@@ -1,14 +1,13 @@
-/* GLOBAL */
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
 @import "./common/variables";
 @import "./common/mixins";
 @import "./common/fonts";
 @import "./common/global";
 @import "./common/visually-hidden";
 
-/* BLOCKS */
+/* БЛОКИ */
 @import "./blocks/header";
 @import "./blocks/nav";
-@import "./blocks/nav-list";
 @import "./blocks/hero";
 @import "./blocks/programs";
 @import "./blocks/how";
@@ -17,3 +16,4 @@
 @import "./blocks/slider";
 @import "./blocks/costs";
 @import "./blocks/footer";
+@import "./blocks/social-list";

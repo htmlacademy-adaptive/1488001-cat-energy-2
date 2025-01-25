@@ -5,10 +5,11 @@
   background-repeat: no-repeat;
   position: relative;
   padding-top: 65px;
+  z-index: 20;
 
-  @media (min-width: $tablet) {
+  @media(min-width: $tablet) {
     background: none;
-    padding: 0;
+    padding: 21px 0 0;
   }
 }
 
@@ -16,4 +17,9 @@
   position: absolute;
   top: 13px;
   left: 21px;
+
+  @media(min-width: $tablet) {
+    top: 17px;
+    left: 22px;
+  }
 }
