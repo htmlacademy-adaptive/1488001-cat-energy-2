@@ -18,7 +18,8 @@
   margin-bottom: 20px;
 
   @media(min-width: $tablet) {
-    padding: 62px 20px 70px;
+    padding: 62px 20px 60px;
+    margin: 0 20px 30px;
   }
 }
 
@@ -80,7 +81,8 @@
       width: 140px;
       height: 194px;
       top: 20px;
-      left: 457px;
+      left: unset;
+      right: 75px;
     }
   }
 
@@ -90,7 +92,8 @@
 
     @media(min-width: $tablet) {
       top: 30px;
-      left: 427px;
+      left: unset;
+      right: 45px;
     }
   }
 }
@@ -105,7 +108,8 @@
 
     @media(min-width: $tablet) {
       top: 73px;
-      left: 393px;
+      left: unset;
+      right: 11px;
       background-image: url("./../../icons/cat-pro-tablet.svg");
       width: 268px;
       height: 112px;
@@ -118,7 +122,8 @@
 
     @media(min-width: $tablet) {
       top: 30px;
-       left: 427px;
+      left: unset;
+      right: 45px;
     }
   }
 }

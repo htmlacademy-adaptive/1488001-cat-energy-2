@@ -5,6 +5,10 @@
   list-style: none;
   display: flex;
   max-width: 327px;
+
+  @media(min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .example-list__item {
@@ -28,6 +32,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: $tablet) {
+    width: 164px;
+    margin-right: 43px;
+    padding: 0px 15px 17px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-list__caption {
@@ -38,4 +50,11 @@
   text-align: center;
   padding: 0 11px;
   background: #eaeaea;
+
+  @media(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 148px;
+    margin: -7px 7px 0;
+  }
 }
