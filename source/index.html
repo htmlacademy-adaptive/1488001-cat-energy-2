@@ -48,13 +48,15 @@
   <main class="main">
 
     <section class="hero">
-      <div class="hero__wrapper">
-        <div class="hero__offer">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
+      <div class="hero__block">
+        <div class="hero__wrapper">
+          <div class="hero__offer">
+            <h1 class="hero__title">Функциональное питание для котов</h1>
+            <p class="hero__text">Занялся собой? Займись котом!</p>
+          </div>
         </div>
+        <a class="hero__link" href="#">Подобрать программу</a>
       </div>
-      <a class="hero__link" href="#">Подобрать программу</a>
     </section>
 
     <section class="programs">
@@ -102,14 +104,16 @@
     </section>
 
     <section class="example">
-      <div class="container">
-        <h2 class="example__title">
-          Живой пример
-        </h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+      <div class="example__block">
+        <div class="example__details">
+          <h2 class="example__title">
+            Живой пример
+          </h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+        </div>
         <div class="example__wrapper">
           <ul class="example-list">
             <li class="example-list__item">
@@ -126,14 +130,14 @@
             <p class="costs__content">15 000 руб.</p>
           </div>
         </div>
-        <div class="example__demo">
-          <div class="before-after-container">
-            <figure>
-              <div id="before_after"></div>
-            </figure>
-            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="before_after_slider" />
-          </div>
-        </div>
+      </div>
+      <div class="example__demo">
+        <!-- <div class="before-after-container">
+          <figure>
+            <div id="before_after"></div>
+          </figure>
+          <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="before_after_slider" />
+        </div> -->
       </div>
     </section>
 
@@ -146,13 +150,16 @@
           Приглашаем к сотрудничеству дилеров!
         </div>
         <address class="footer__invitation-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          <div class="footer__invitation-street">
+            ул. Большая Конюшенная, д. 19/8
+          </div>
+          <div class="footer__invitation-city">Санкт-Петербург</div>
         </address>
       </div>
     </div>
     <div id="map" class="footer__map-wrapper">
       <div class="footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198339!2d30.320472477539116!3d59.9387191620933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1737383691921!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198339!2d30.320472477539116!3d59.9387191620933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slv!4v1737383691921!5m2!1sru!2slv" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="footer__map-picture">
         <picture>
@@ -186,7 +193,7 @@
         <div class="footer__copyright">
           <a href="#" class="footer__link">
             HTML Academy
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__logo-link" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
                 fill="#666666" />

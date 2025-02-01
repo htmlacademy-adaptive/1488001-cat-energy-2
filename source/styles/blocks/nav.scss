@@ -53,6 +53,10 @@
     display: flex;
     margin-right: 26px;
   }
+
+  @media(min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .nav--opened .nav__list {
@@ -67,6 +71,10 @@
     display: flex;
     position: static;
     margin-right: 26px;
+  }
+
+  @media(min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -94,5 +102,11 @@
     padding: 0;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media(min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $bg-color-basic-white;
   }
 }

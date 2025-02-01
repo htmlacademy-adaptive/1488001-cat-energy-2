@@ -1,11 +1,27 @@
 .footer {
-
+  position: relative;
 }
 
 .footer__invitation {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+
+  @media(min-width: $tablet) {
+    padding: 50px 20px 60px;
+    min-height: 80px;
+  }
+
+  @media(min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 102px;
+    width: 550px;
+    min-height: 199px;
+    z-index: 20;
+    background-color: $bg-color-basic-white;
+    padding-top: 70px;
+  }
 }
 
 .footer__invitation-text {
@@ -15,12 +31,38 @@
   font-weight: 400;
   color: $font-color-basic-black1;
   text-transform: uppercase;
+
+  @media(min-width: $tablet) {
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+
+    @media(min-width: $desktop) {
+      padding-left: 60px;
+      width: 183px;
+    }
+  }
 }
 
 .footer__invitation-address {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+
+  @media(min-width: $tablet) {
+    padding-right: 40px;
+    width: 200px;
+    font-size: 16px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media(min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer__map-wrapper {
@@ -35,6 +77,11 @@
   left: 0;
   top: 0;
   z-index: 10;
+
+  @media(min-width: $tablet) {
+    padding-bottom: 55px;
+    height: 450px;                          // в макете - 400px
+  }
 }
 
 .footer__map-picture {
@@ -47,12 +94,24 @@
 .footer__details {
   background-color: $bg-color-basic-grey;
   padding: 40px 20px;
+
+  @media(min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 96px;
+    padding-bottom: 55px;
+  }
 }
 
 .footer__logo {
   width: 128px;
   display: block;
   margin: 0 auto 10px;
+
+  @media(min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__socials-wrapper {
@@ -60,6 +119,13 @@
   padding-bottom: 20px;
   border-top: 1px solid $border-color-basic-grey;
   border-bottom: 1px solid $border-color-basic-grey;
+
+  @media(min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .footer__link {
@@ -69,4 +135,14 @@
   margin: 20px 0 40px;
   text-decoration: none;
   color: $font-color-special-darkgrey;
+
+  @media(min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.footer__logo-link {
+  @media(min-width: $tablet) {
+    margin-left: 25px;
+  }
 }

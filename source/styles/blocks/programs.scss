@@ -2,12 +2,22 @@
   @media(min-width: $tablet) {
     margin-bottom: 16px;
   }
+
+  @media(min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto 50px;
+  }
 }
 
 .programs__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media(min-width: $desktop) {
+    display: flex;
+    column-gap: 80px;
+  }
 }
 
 .programs__item {
@@ -20,6 +30,13 @@
   @media(min-width: $tablet) {
     padding: 62px 20px 60px;
     margin: 0 20px 30px;
+  }
+
+  @media(min-width: $desktop) {
+    width: 570px;
+    min-height: 374px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -42,6 +59,12 @@
     padding: 15px 0 0 34px;
   }
 
+  @media(min-width: $desktop) {
+    padding-left: 213px;
+    padding-top: 77px;
+    margin: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -56,6 +79,11 @@
     @media(min-width: $tablet) {
       width: 200px;
       height: 200px;
+    }
+
+    @media(min-width: $desktop) {
+      width: 100px;
+      height: 100px;
     }
 }
 
@@ -84,6 +112,15 @@
       left: unset;
       right: 75px;
     }
+
+    @media(min-width: $desktop) {
+      background-image: url("./../../icons/cat-slim-desktop.svg");
+      width: 70px;
+      height: 97px;
+      top: 40px;
+      right: unset;
+      left: 67px;
+    }
   }
 
   &::before {
@@ -94,6 +131,12 @@
       top: 30px;
       left: unset;
       right: 45px;
+    }
+
+    @media(min-width: $desktop) {
+      top: 47px;
+      right: unset;
+      left: 52px;
     }
   }
 }
@@ -114,6 +157,15 @@
       width: 268px;
       height: 112px;
     }
+
+    @media(min-width: $desktop) {
+      top: 68px;
+      right: 0;
+      left: 33px;
+      background-image: url("./../../icons/cat-pro-desktop.svg");
+      width: 134px;
+      height: 56px;
+    }
   }
 
   &::before {
@@ -125,10 +177,16 @@
       left: unset;
       right: 45px;
     }
+
+    @media(min-width: $desktop) {
+      top: 47px;
+      right: unset;
+      left: 52px;
+    }
   }
 }
 
-.programs__item:last-child{
+.programs__item:last-child {
   margin-bottom: 0;
 }
 
@@ -147,6 +205,14 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media(min-width: $desktop) {
+    width: 475px;
+    padding-top: 73px;
+    padding-left: 18px;
+    border-bottom: none;
+    margin-bottom: 13px;
+  }
 }
 
 .programs__link {
@@ -164,6 +230,10 @@
     margin-left: 33px;
     font-size: 20px;
     line-height: auto;
+  }
+
+  @media(min-width: $desktop) {
+    margin-left: 52px;
   }
 
   &::after {

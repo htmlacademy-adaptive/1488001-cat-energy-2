@@ -9,6 +9,10 @@
   @media(min-width: $tablet) {
     margin: 0;
   }
+
+  @media(min-width: $desktop) {
+    
+  }
 }
 
 .example-list__item {
@@ -36,7 +40,7 @@
   @media(min-width: $tablet) {
     width: 164px;
     margin-right: 43px;
-    padding: 0px 15px 17px;
+    padding: 14px 15px 17px;
     font-size: 30px;
     line-height: 37px;
   }

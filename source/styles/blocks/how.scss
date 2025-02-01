@@ -6,6 +6,11 @@
   @media(min-width: $tablet) {
     margin: 28px 20px;
   }
+
+  @media(min-width: $desktop) {
+    padding-left: 81px;
+    padding-bottom: 0;
+  }
 }
 
 .how__title {
@@ -21,6 +26,10 @@
     line-height: 60px;
     margin-bottom: 70px;
   }
+
+  @media(min-width: $desktop) {
+    margin-bottom: 74px;
+  }
 }
 
 .how__list {
@@ -34,6 +43,12 @@
     gap: 87px 157px;
     width: 709px;
     margin: 0 auto;
+  }
+
+  @media(min-width: $desktop) {
+    flex-wrap: nowrap;
+    width: auto;
+    column-gap: 75px;
   }
 }
 
@@ -53,6 +68,11 @@
     padding: 111px 0 0 0;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media(min-width: $desktop) {
+    width: 250px;
+    min-height: 236px;
   }
 
   &::before {
