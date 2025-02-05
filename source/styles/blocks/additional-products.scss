@@ -1,0 +1,111 @@
+.additional-products {
+  width: 280px;
+  margin: 0 auto 43px;
+}
+
+.additional-products__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $font-color-basic-black;
+  margin-bottom: 36px;
+}
+
+.additional-products__cards {
+  padding: 0;
+  margin: 0 0 35px;
+  list-style-type: none;
+}
+
+.additional-products__card {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $border-color-basic-grey2;
+  border-bottom: 1px solid $border-color-basic-grey2;
+}
+
+.additional-products__link {
+  text-decoration: none;
+}
+
+.additional-products__name {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $font-color-basic-black;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+
+}
+
+.additional-products__details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  color: $font-color-special-darkgrey;
+}
+
+.additional-products__btn {
+  display: block;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bg-color-basic-green;
+  text-transform: uppercase;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-color-basic-white;
+  margin-top: 15px;
+}
+
+.additional-products__banner {
+  position: relative;
+  width: 280px;
+  min-height: 290px;
+  background-image: image-set(
+      url("../../images/catalogue-cat-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/catalogue-cat-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/catalogue-cat-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/catalogue-cat-mobile@2x.jpg") type("image/jpeg") 2x
+  );
+  background-size: 280px 290px;
+  z-index: -2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 290px;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 78px;
+    height: 80px;
+    transform: translateX(-50%);
+    background-image: url("../../icons/icon-gift.svg");
+    background-size: 78px 80px;
+  }
+}
+
+.additional-products__banner-text {
+  padding-top: 187px;
+  padding-bottom: 43px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-color-basic-white;
+  width: 161px;
+  margin: 0 auto;
+  text-align: center;
+}

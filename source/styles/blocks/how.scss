@@ -8,8 +8,9 @@
   }
 
   @media(min-width: $desktop) {
-    padding-left: 81px;
-    padding-bottom: 0;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -28,7 +29,7 @@
   }
 
   @media(min-width: $desktop) {
-    margin-bottom: 74px;
+    margin-bottom: 73px;
   }
 }
 
@@ -46,8 +47,7 @@
   }
 
   @media(min-width: $desktop) {
-    flex-wrap: nowrap;
-    width: auto;
+    width: 1225px;
     column-gap: 75px;
   }
 }
@@ -163,6 +163,24 @@
 
     &:nth-child(8)::after {
       content: "8";
+    }
+  }
+
+  @media(min-width: $desktop) {
+    &:nth-child(1)::after{
+      right: 23px;
+    }
+
+    &:nth-child(2)::after{
+      right: 5px;
+    }
+
+    &:nth-child(3)::after{
+      right: 3px;
+    }
+
+    &:nth-child(4)::after{
+      right: 5px;
     }
   }
 }

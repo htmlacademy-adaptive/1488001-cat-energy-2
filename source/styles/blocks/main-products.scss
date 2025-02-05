@@ -1,0 +1,140 @@
+.main-products {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-products__title {
+  padding: 0;
+  margin: 30px 0 61px;
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: $font-color-basic-black;
+}
+
+.main-products__cards {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-products__card {
+
+}
+
+.main-products__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  min-height: 107px;
+}
+
+.main-products__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 140px;
+  // height: 107px;
+  padding: 10px 36px;
+  border: none;
+}
+
+.main-products__img {
+  border: none;
+}
+
+.main-products__info {
+  width: 140px;
+  min-height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-products__name {
+  width: 76px;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-basic-black;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.main-products__details {
+  width: 140px;
+  padding: 0;
+}
+
+.main__products__detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  color: $font-color-special-darkgrey;
+}
+
+.main-products__detail-name {
+  text-align: left;
+}
+
+.main-products__detail-value {
+  text-align: right;
+}
+
+.main-products__btn {
+  display: block;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bg-color-basic-green;
+  text-transform: uppercase;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-color-basic-white;
+  margin-top: 17px;
+  margin-bottom: 44px;
+}
+
+.main-products__more-image {
+  width: 30px;
+  margin: 0 auto 28px;
+}
+
+.main-products__more-title {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-basic-black;
+  text-align: center;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.main-products__more-info {
+  font-size: 12px;
+  line-height: 16px;
+  color: $font-color-special-darkgrey;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.main-products__more-btn {
+  display: block;
+  background-color: $bg-color-basic-grey;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-special-darkgrey;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+}
