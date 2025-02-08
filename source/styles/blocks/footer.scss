@@ -42,7 +42,6 @@
   width: 212px;
 
   @media(min-width: $tablet) {
-    padding-left: 40px;
     font-size: 20px;
     line-height: 26px;
     width: 163px;
@@ -122,13 +121,13 @@
 
 .footer__details {
 
-
   @media(min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 96px;
     padding-bottom: 55px;
+    margin: 0 30px;
   }
 
   @media(min-width: $desktop) {

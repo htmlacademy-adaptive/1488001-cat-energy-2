@@ -1,15 +1,17 @@
 .header {
   background-image: url("./../../images/logo-text.svg");
-  background-position: 54% 24px;
+  background-position: center 24px;
   background-size: 101px 18px;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 65px;
   z-index: 20;
+  border-bottom: 1px solid $border-color-basic-grey;
 
   @media(min-width: $tablet) {
     background: none;
     padding: 30px 0 0;
+    border-bottom: none;
   }
 
   @media(min-width: $desktop) {

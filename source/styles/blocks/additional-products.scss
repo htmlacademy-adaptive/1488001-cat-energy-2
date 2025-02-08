@@ -1,19 +1,18 @@
 .additional-products {
-  width: 280px;
-  margin: 0 auto 43px;
+  margin: 0 0 43px;
 }
 
 .additional-products__title {
-  font-family: $Oswald;
-  font-size: 24px;
-  line-height: 24px;
-  color: $font-color-basic-black;
   margin-bottom: 36px;
+
+  @media(min-width: $tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .additional-products__cards {
   padding: 0;
-  margin: 0 0 35px;
+  margin: 0 30px 35px;
   list-style-type: none;
 }
 
@@ -24,8 +23,13 @@
   border-bottom: 1px solid $border-color-basic-grey2;
 }
 
-.additional-products__link {
-  text-decoration: none;
+.additional-products__info {
+
+  @media(min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .additional-products__name {
@@ -36,6 +40,10 @@
   text-transform: uppercase;
   margin: 0 0 10px;
 
+  @media(min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__details {
@@ -44,11 +52,16 @@
   font-size: 14px;
   line-height: 14px;
   color: $font-color-special-darkgrey;
+
+  @media(min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    gap: 49px;
+  }
 }
 
 .additional-products__btn {
   display: block;
-  width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -63,8 +76,9 @@
 }
 
 .additional-products__banner {
+  display: block;
+  margin: 0 30px;
   position: relative;
-  width: 280px;
   min-height: 290px;
   background-image: image-set(
       url("../../images/catalogue-cat-mobile@1x.webp") type("image/webp") 1x,
@@ -72,7 +86,9 @@
       url("../../images/catalogue-cat-mobile@1x.jpg") type("image/jpeg") 1x,
       url("../../images/catalogue-cat-mobile@2x.jpg") type("image/jpeg") 2x
   );
-  background-size: 280px 290px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -2;
 
   &::before {
