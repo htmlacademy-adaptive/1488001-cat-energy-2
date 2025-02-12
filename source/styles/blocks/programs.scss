@@ -256,4 +256,8 @@
   &:hover::after {
     width: 32px;
   }
+
+  &:active {
+    color: rgba($color: $font-color-basic-black, $alpha: 0.3);
+  }
 }

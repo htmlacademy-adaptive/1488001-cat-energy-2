@@ -1,9 +1,24 @@
 .news {
   margin: 0 0 40px;
+
+  @media(min-width: $desktop) {
+    margin-bottom: 87px;
+  }
+}
+
+.news__wrapper {
+  @media(min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .news__title {
   margin: 0 0 32px;
+
+  @media(min-width: $desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .news__promo {
@@ -13,24 +28,43 @@
   color: $font-color-basic-black;
   margin: 0 auto 24px;
   text-align: center;
+
+  @media(min-width: $desktop) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .news__form {
   margin: 0 30px;
+
+  @media(min-width: $tablet) {
+    display: flex;
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $desktop) {
+    width: 752px;
+  }
 }
 
 .news__input {
   width: 100%;
   height: 56px;
+  padding: 13px;
   border: 1px solid $border-color-basic-grey2;
   margin-bottom: 16px;
+
+  @media(min-width: $desktop) {
+    width: 496px;
+  }
 }
 
 .news__input,
 .news__input::placeholder {
   font-family: $Oswald;
   font-size: 20px;
-  line-height: auto;
   color: $font-color-special-darkgrey;
   text-transform: uppercase;
 }
@@ -49,5 +83,10 @@
   line-height: 26px;
   color: $bg-color-basic-white;
   border: none;
+
+  @media(min-width: $tablet) {
+    width: 256px;
+    height: 56px;
+  }
 }
 

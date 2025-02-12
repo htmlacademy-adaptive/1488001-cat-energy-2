@@ -1,10 +1,6 @@
 .more {
   position: relative;
 
-  @media(min-width: $tablet) {
-    width: 324px;
-  }
-
   &::before {
     content: "";
     display: block;
@@ -21,17 +17,45 @@
       background-image: url("../../icons/icon-plus-tablet.svg");
       background-size: 60px 60px;
       background-repeat: no-repeat;
-      top: 49px;
+      top: 122px;
       left: 50%;
       transform: translateX(-50%);
     }
   }
 
   @media(min-width: $tablet) {
-    padding: 160px 37px 40px;
-    min-height: 429px;
-    border: 1px solid $bg-color-basic-grey;
+    padding: 233px 37px 27px;
+    width: 249px;
+    position: relative;
+    box-sizing: unset;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      border: 1px solid $bg-color-basic-grey;
+      height: calc(100% - 71px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
   }
+
+  @media(min-width: $desktop) {
+    box-sizing: border-box;
+    width: 245px;
+    min-height: 430px;
+    padding: 222px 37px 40px;
+  }
+}
+
+.more__details {
+  @media(min-width: $tablet) {
+    flex-grow: 1;
+  }
+
 }
 
 .more__title {
@@ -81,4 +105,8 @@
   color: $font-color-special-darkgrey;
   text-transform: uppercase;
   margin-bottom: 46px;
+
+  @media(min-width: $tablet) {
+    margin: 0;
+  }
 }

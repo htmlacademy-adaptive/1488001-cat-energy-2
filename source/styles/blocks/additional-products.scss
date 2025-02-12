@@ -1,5 +1,9 @@
 .additional-products {
   margin: 0 0 43px;
+
+  @media(min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .additional-products__title {
@@ -10,10 +14,26 @@
   }
 }
 
+.additional-products__wrapper {
+  @media(min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional-products__cards {
   padding: 0;
   margin: 0 30px 35px;
   list-style-type: none;
+
+  @media(min-width: $desktop) {
+    width: 896px;
+    min-height: 288px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .additional-products__card {
@@ -21,14 +41,26 @@
   padding-bottom: 19px;
   border-top: 1px solid $border-color-basic-grey2;
   border-bottom: 1px solid $border-color-basic-grey2;
+
+  @media(min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 13px;
+  }
 }
 
 .additional-products__info {
-
   @media(min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media(min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 326px 283px 1fr;
   }
 }
 
@@ -73,6 +105,20 @@
   line-height: 20px;
   color: $bg-color-basic-white;
   margin-top: 15px;
+
+  @media(min-width: $desktop) {
+    width: 244px;
+    height: 39px;
+    margin-top: 0;
+  }
+
+  &:hover {
+    background-color: $bg-color-basic-green2;
+  }
+
+  &:active {
+    color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
+  }
 }
 
 .additional-products__banner {
@@ -90,6 +136,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -112,6 +159,14 @@
     transform: translateX(-50%);
     background-image: url("../../icons/icon-gift.svg");
     background-size: 78px 80px;
+  }
+
+  @media(min-width: $desktop) {
+    width: 245px;
+    min-height: 288px;
+    margin: 0;
+    background-size: auto;
+    background-position: unset;
   }
 }
 
