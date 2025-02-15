@@ -136,6 +136,12 @@
   }
 }
 
+.footer__details-link {
+  &:hover .footer__logo {
+
+  }
+}
+
 .footer__logo {
   width: 128px;
   display: block;
@@ -168,6 +174,10 @@
   text-decoration: none;
   color: $font-color-special-darkgrey;
 
+  &:hover .footer__logo-link {
+    stroke: $bg-color-basic-green;
+  }
+
   @media(min-width: $tablet) {
     margin: 0;
   }
@@ -175,6 +185,7 @@
 
 .footer__logo-link {
   @media(min-width: $tablet) {
+    fill: #666666;
     margin-left: 25px;
   }
 }

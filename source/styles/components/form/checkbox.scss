@@ -1,0 +1,27 @@
+.checkbox {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-basic-grey2;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.checkbox::before {
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../../icons/tick.svg");
+  background-size: 18px 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.checkbox:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}

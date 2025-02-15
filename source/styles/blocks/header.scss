@@ -29,10 +29,20 @@
   @media(min-width: $tablet) {
     top: 17px;
     left: 22px;
+    z-index: 5;
   }
 
   @media(min-width: $desktop) {
     top: 47px;
     left: 0;
   }
+}
+
+.header__logo:hover .header__logo-image,
+.header__logo:focus .header__logo-image {
+  opacity: 0.8;
+}
+
+.header__logo:active .header__logo-image {
+  opacity: 0.6;
 }

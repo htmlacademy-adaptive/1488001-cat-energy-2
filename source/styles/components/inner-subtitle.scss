@@ -1,12 +1,9 @@
 .inner-subtitle {
+  padding: 0;
   font-family: $Oswald;
+  font-weight: normal;
   color: $font-color-basic-black;
   position: relative;
-
-  @media(min-width: $tablet) {
-    font-size: 32px;
-    line-height: 32px;
-  }
 
   &::before {
     content: "";
@@ -22,18 +19,28 @@
 }
 
 .inner-subtitle__wrapper {
-  width: 1220px;
-  margin: 0 auto;
+  @media(min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .inner-subtitle__text {
   display: inline-block;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $bg-color-basic-white;
+  // box-sizing: unset;
+  // max-width: 187px;
 
   @media(min-width: $tablet) {
-    margin-left: 30px;
+    margin-left: 32px;
+    padding: 0 40px 0;
+    // max-width: unset;
+  }
+
+  @media(min-width: $desktop) {
+    margin-left: -40px;
   }
 }
 

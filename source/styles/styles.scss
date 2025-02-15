@@ -6,10 +6,16 @@
 @import "./common/visually-hidden";
 
 // КОМПОНЕНТЫ
+@import "./components/title";
 @import "./components/inner-title";
 @import "./components/inner-subtitle";
 @import "./components/card/card";
 @import "./components/card/detail";
+@import "./components/form/label";
+@import "./components/form/input";
+@import "./components/form/radiobutton";
+@import "./components/form/comment";
+@import "./components/form/checkbox";
 
 /* БЛОКИ */
 @import "./blocks/header";
@@ -23,8 +29,8 @@
 @import "./blocks/costs";
 @import "./blocks/footer";
 @import "./blocks/social-list";
-@import "./blocks/main-products";
+@import "./blocks/products";
 @import "./blocks/more";
-@import "./blocks/additional-products";
+@import "./blocks/addons";
 @import "./blocks/news";
 @import "./blocks/selection";

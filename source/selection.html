@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -46,61 +48,81 @@
   <main class="main">
     <section class="selection">
       <form action="https://echo.htmlacademy.ru" method="POST" class="selection__form">
-        <h2 class="selection__title inner-title">Подбор программы</h2>
+        <h1 class="selection__title title">Подбор программы</h1>
         <div class="selection__basics-wrapper">
           <p class="selection__instruction">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
           <div class="selection__basics">
-            <div class="selection__inputs">
-              <label class="selection__label">Имя:*
-                <input type="text" class="selection__input selection__input-name" placeholder="Барсик">
-              </label>
-              <label class="selection__label">Вес (кг):*
-                <input type="number" class="selection__input selection__input-weight" placeholder="7">
-              </label>
-              <label class="selection__label">Возраст (лет):
-                <input type="number" class="selection__input selection__input-age" placeholder="7">
-              </label>
-            </div>
+            <ul class="selection__inputs">
+              <li class="selection__input-wrapper">
+                <label for id="name" class="label">Имя:*</label>
+                <input type="text" class="input" id="name" placeholder="Барсик">
+              </li>
+              <li class="selection__input-wrapper">
+                <label for id="weight" class="label">Вес (кг):*</label>
+                <input type="number" class="input" id="weight" placeholder="7">
+              </li>
+              <li class="selection__input-wrapper">
+                <label class="label">Возраст (лет):</label>
+                <input type="number" class="input" placeholder="7">
+              </li>
+            </ul>
             <div class="selection__radios-wrapper">
-              <div class="selection__radios">
-                <label class="selection__label selection__radio-label">
-                  <input type="radio" class="selection__radiobutton selection__radiobutton-loss" name="mass" value="loss" checked>Похудение
-                </label>
-                <label class="selection__label selection__radio-label">
-                  <input type="radio" class="selection__radiobutton selection__radiobutton-gain" name="mass" value="gain" >Набор массы
-                </label>
-                <label class="selection__label selection__radio-label">
-                  <input type="radio" class="selection__radiobutton selection__radiobutton-advice" name="mass" value="advice">Не знаю (нужен ваш совет)
-                </label>
-              </div>
+              <ul class="selection__radios">
+                <li class="selection__radio-wrapper">
+                  <label for id="loss" class="selection__radio-label label">Похудение</label>
+                  <input type="radio" class="radiobutton" id="loss" name="mass" value="loss" checked>
+                </li>
+                <li class="selection__radio-wrapper">
+                  <label class="selection__radio-label label">Набор массы</label>
+                  <input type="radio" class="radiobutton" name="mass" value="gain">
+                </li>
+                <li class="selection__radio-wrapper">
+                  <label class="selection__radio-label label">Не знаю (нужен ваш совет)</label>
+                  <input type="radio" class="radiobutton" name="mass" value="advice">
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <h3 class="selection__subtitle inner-subtitle">Контактные данные (владельца кота)</h3>
-        <div class="selection__contacts">
-          <label class="selection__label selection__label-email">Email:*
-            <input type="email" class="selection__input selection__input-email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="selection__label selection__label-phone">Телефон:*
-            <input type="phone" class="selection__input selection__input-phone" placeholder="8 (960) 900-60-90">
-          </label>
-        </div>
-        <h3 class="selection__subtitle inner-subtitle">Комментарий</h3>
-        <textarea class="selection__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        <h3 class="selection__subtitle inner-subtitle">Дополнительно</h3>
+        <h2 class="selection__subtitle inner-subtitle">
+          <div class="inner-subtitle__wrapper">
+            <span class="inner-subtitle__text">Контактные данные (владельца кота)</span>
+          </div>
+        </h2>
+        <ul class="selection__contacts">
+          <li class="selection__input-wrapper">
+            <label for id="email" class="label">Email:*</label>
+            <input type="email" class="input" id="email" placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="selection__input-wrapper">
+            <label class="label">Телефон:*</label>
+            <input type="phone" class="input" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
+        <h2 class="selection__subtitle inner-subtitle">
+          <div class="inner-subtitle__wrapper">
+            <span class="inner-subtitle__text">Комментарий</span>
+          </div>
+        </h2>
+        <textarea class="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <h2 class="selection__subtitle inner-subtitle">
+          <div class="inner-subtitle__wrapper">
+            <span class="inner-subtitle__text">Дополнительно</span>
+          </div>
+        </h2>
         <div class="selection__addons">
-          <label class="selection__label selection__label-checkbox">
-            <input type="checkbox" class="selection__checkbox" name="sweetener" checked>Сахарозаменитель
+          <label class="selection__label-checkbox label">
+            <input type="checkbox" class="checkbox" name="sweetener" checked>Сахарозаменитель
           </label>
-          <label class="selection__label selection__label-checkbox">
-            <input type="checkbox" class="selection__checkbox" name="water">Питьевая вода
+          <label class="selection__label-checkbox label">
+            <input type="checkbox" class="checkbox" name="water">Питьевая вода
           </label>
-          <label class="selection__label selection__label-checkbox">
-            <input type="checkbox" class="selection__checkbox" name="milk">Молоко
+          <label class="selection__label-checkbox label">
+            <input type="checkbox" class="checkbox" name="milk">Молоко
           </label>
-          <label class="selection__label selection__label-checkbox">
-            <input type="checkbox" class="selection__checkbox" name="vitamins">Витамины
+          <label class="selection__label-checkbox label">
+            <input type="checkbox" class="checkbox" name="vitamins">Витамины
           </label>
         </div>
         <div class="selection__btn-wrapper">

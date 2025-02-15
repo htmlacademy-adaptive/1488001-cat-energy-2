@@ -1,5 +1,13 @@
 .nav {
   position: relative;
+
+  @media(min-width: $tablet) {
+    padding-left: 280px;
+  }
+
+  @media(min-width: $desktop) {
+    padding-left: 320px;
+  }
 }
 
 .nav__toggle {
@@ -40,14 +48,9 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 0 34px;
+    gap: 21px 34px;
     border-top: none;
     margin-right: 26px;
-    // width: 436px;
-  }
-
-  @media(min-width: $desktop) {
-    // width: 475px;
   }
 }
 
@@ -85,6 +88,7 @@
 
 .nav__item {
   border-bottom: 1px solid $border-color-basic-grey3;
+  text-align: center;
 
   @media(min-width: $tablet) {
     border-bottom: none;
@@ -102,6 +106,7 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+  color: $font-color-basic-black;
 
   &::after {
     content: "";
@@ -126,15 +131,11 @@
     color: $bg-color-basic-white;
 
     &:hover {
-      color: rgba($color: $bg-color-basic-white, $alpha: 0.6);
+      opacity: 0.6;
     }
 
     &:focus {
-      color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
-    }
-
-    &:active {
-      color: $bg-color-basic-white;
+      opacity: 0.3;
     }
 
     &:active::after {
@@ -164,7 +165,15 @@
   &:hover,
   &:focus,
   &:active {
-    color: $font-color-basic-white;
+    color: $font-color-basic-black;
+  }
+
+  @media(min-width: $desktop) {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $font-color-basic-white;
+    }
   }
 }
 
@@ -172,15 +181,15 @@
   color: $font-color-basic-black;
 
   &:hover {
-    color: rgba($color: $font-color-basic-black, $alpha: 0.6);
+    opacity: 0.6;
   }
 
   &:focus {
-    color: rgba($color: $font-color-basic-black, $alpha: 0.3);
+    opacity: 0.3;
   }
 
   &:active {
-    color: $font-color-basic-black;
+    opacity: 1;
   }
 
   &:active::after {

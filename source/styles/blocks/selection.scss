@@ -1,15 +1,11 @@
 .selection__title {
   padding-top: 27px;
-  margin-bottom: 37px;
-  font-size: 36px;
-  line-height: 36px;
+  margin: 0 20px 37px ;
 
   @media(min-width: $tablet) {
     padding-top: 65px;
     margin-left: 40px;
     margin-bottom: 54px;
-    font-size: 60px;
-    line-height: 60px;
   }
 
   @media(min-width: $desktop) {
@@ -48,92 +44,37 @@
 .selection__basics {
   @media(min-width: $desktop) {
     display: grid;
-    grid-template-columns: 649px 571px;
-    margin-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
 .selection__inputs {
+  padding: 0;
   margin: 0 20px 24px;
+  list-style-type: none;
 
   @media(min-width: $tablet) {
     margin-left: 40px;
+    margin-right: 40px;
   }
 
   @media(min-width: $desktop) {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
-.selection__label {
-  font-family: $Oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  margin-bottom: 13px;
-  display: inline-block;
-
-  @media(min-width: $tablet) {
-    font-size: 20px;
-    line-height: 30px;
-  }
+.selection__input-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.selection__input {
-  height: 45px;
-  border: 1px solid $border-color-basic-grey5;
-  margin-left: 13px;
-  padding: 14px 30px 13px 15px;
-}
-
-.selection__input::placeholder {
-  font-family: $Oswald;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $font-color-special-darkgrey;
-}
-
-.selection__input-name {
-  width: 205px;
-  // width: 228px;
+.selection__input-wrapper:not(:last-child) {
   margin-bottom: 14px;
 
-  @media(min-width: $tablet) {
-    width: 568px;
-  }
-
   @media(min-width: $desktop) {
-    width: 510px;
-  }
-}
-
-.selection__input-weight {
-  width: 183px;
-  // width: 207px;
-  margin-bottom: 14px;
-
-  @media(min-width: $tablet) {
-    width: 540px;
-  }
-
-  @media(min-width: $desktop) {
-    width: 482px;
-  }
-}
-
-.selection__input-age {
-  width: 150px;
-  // width: 173px;
-
-  @media(min-width: $tablet) {
-    width: 498px;
-  }
-
-  @media(min-width: $desktop) {
-    width: 440px;
+    margin-bottom: 20px;
   }
 }
 
@@ -150,11 +91,13 @@
 
   @media(min-width: $desktop) {
     padding-top: 0;
+    margin-left: 0;
   }
 }
 
 .selection__radios {
-  margin: 0 20px;
+  padding: 0;
+  margin: 0 40px 0 20px;
   display: flex;
   flex-direction: column;
 
@@ -164,74 +107,48 @@
   }
 
   @media(min-width: $desktop) {
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 28px;
+    padding-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-.selection__radio-label {
+.selection__radio-wrapper {
   display: flex;
   align-items: center;
+}
+
+.selection__radio-wrapper:not(:last-child) {
+  margin-bottom: 14px;
 
   @media(min-width: $desktop) {
     margin-bottom: 18px;
   }
 }
 
-input[type="radio"] {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $border-color-basic-grey2;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-}
-
-input[type="radio"]::before {
-  content: "";
-  width: 13px;
-  height: 13px;
-  background: $bg-color-basic-green;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s ease;
-}
-
-input[type="radio"]:checked::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.selection__radiobutton {
-  margin: 0 15px 0 0;
+.selection__radio-label {
+  order: 2;
 }
 
 .selection__subtitle {
-  width: 187px;
   font-size: 24px;
   line-height: 26px;
-  font-weight: 400;
 
   @media(min-width: $tablet) {
-    width: 514px;
-    margin-left: 40px;
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media(min-width: $desktop) {
-    margin-left: 333px;
   }
 }
 
 .selection__contacts {
+  padding: 0;
   margin: 45px 20px 24px;
 
   @media(min-width: $tablet) {
     margin-left: 40px;
+    margin-right: 40px;
   }
 
   @media(min-width: $desktop) {
@@ -241,64 +158,6 @@ input[type="radio"]:checked::before {
     width: 1220px;
     margin: 0 auto;
   }
-}
-
-.selection__input-email {
-  width: 202px;
-  // width: 217px;
-  margin-bottom: 14px;
-
-  @media(min-width: $tablet) {
-    width: 552px;
-  }
-
-  @media(min-width: $desktop) {
-    width: 494px;
-  }
-}
-
-.selection__input-phone {
-  width: 180px;
-  // width: 200px;
-
-  @media(min-width: $tablet) {
-    width: 530px;
-  }
-
-  @media(min-width: $desktop) {
-    width: 420px;
-  }
-}
-
-.selection__comment {
-  margin: 38px 20px 23px;
-  width: 280px;
-  height: 150px;
-  resize: none;
-  padding: 14px 14px 15px;
-  border: 1px solid $border-color-basic-grey5;
-
-  @media(min-width: $tablet) {
-    margin-left: 40px;
-    width: 628px;
-    height: 175px;
-  }
-
-  @media(min-width: $desktop) {
-    display: block;
-    width: 1220px;
-    height: 175px;
-    margin: 0 auto;
-  }
-}
-
-.selection__comment::placeholder {
-  font-family: Oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $font-color-special-darkgrey;
-  text-transform: uppercase;
 }
 
 .selection__addons {
@@ -318,52 +177,9 @@ input[type="radio"]:checked::before {
   }
 }
 
-input[type="checkbox"] {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $border-color-basic-grey2;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-input[type="checkbox"]::before {
-  content: "";
-  width: 18px;
-  height: 14px;
-  background-image: url("../../icons/tick.svg");
-  background-size: 18px 14px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s ease;
-}
-
-input[type="checkbox"]:checked::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
 .selection__label-checkbox {
   display: flex;
   align-items: center;
-  margin-left: 15px;
-
-  @media(min-width: $desktop) {
-    margin-left: 0;
-  }
-}
-
-.selection__label-checkbox:nth-child(2n) {
-  margin-left: 0;
-}
-
-.selection__label-checkbox:nth-child(3n) {
-  @media(min-width: $desktop) {
-    margin-left: 0;
-  }
 }
 
 .selection__btn-wrapper {
