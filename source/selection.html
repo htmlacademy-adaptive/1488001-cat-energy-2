@@ -93,11 +93,11 @@
         <ul class="selection__contacts">
           <li class="selection__input-wrapper">
             <label for id="email" class="label">Email:*</label>
-            <input type="email" class="input" id="email" placeholder="kuklachev@gmail.com">
+            <input type="email" class="input" id="email"">
           </li>
           <li class="selection__input-wrapper">
             <label class="label">Телефон:*</label>
-            <input type="phone" class="input" placeholder="8 (960) 900-60-90">
+            <input type="phone" class="input">
           </li>
         </ul>
         <h2 class="selection__subtitle inner-subtitle">
@@ -112,22 +112,26 @@
           </div>
         </h2>
         <div class="selection__addons">
-          <label class="selection__label-checkbox label">
-            <input type="checkbox" class="checkbox" name="sweetener" checked>Сахарозаменитель
-          </label>
-          <label class="selection__label-checkbox label">
-            <input type="checkbox" class="checkbox" name="water">Питьевая вода
-          </label>
-          <label class="selection__label-checkbox label">
-            <input type="checkbox" class="checkbox" name="milk">Молоко
-          </label>
-          <label class="selection__label-checkbox label">
-            <input type="checkbox" class="checkbox" name="vitamins">Витамины
-          </label>
+          <div class="selection__addon">
+            <label class="selection__label-checkbox label">Сахарозаменитель</label>
+            <input type="checkbox" class="checkbox" name="sweetener" checked>
+          </div>
+          <div class="selection__addon">
+            <label class="selection__label-checkbox label">Питьевая вода</label>
+            <input type="checkbox" class="checkbox" name="water">
+          </div>
+          <div class="selection__addon">
+            <label class="selection__label-checkbox label">Молоко</label>
+            <input type="checkbox" class="checkbox" name="milk">
+          </div>
+          <div class="selection__addon">
+            <label class="selection__label-checkbox label">Витамины</label>
+            <input type="checkbox" class="checkbox" name="vitamins">
+          </div>
         </div>
         <div class="selection__btn-wrapper">
           <button class="selection__submit-btn" type="submit">Отправить заявку</button>
-          <span class="selection__note">* - Обязательные поля</span>
+          <span class="selection__note">* &mdash; Обязательные поля</span>
         </div>
       </form>
     </section>

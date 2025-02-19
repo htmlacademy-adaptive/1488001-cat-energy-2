@@ -1,10 +1,16 @@
+.selection__form {
+  @media(min-width: $tablet){
+    margin-bottom: 55px;
+  }
+}
+
 .selection__title {
   padding-top: 27px;
   margin: 0 20px 37px ;
 
   @media(min-width: $tablet) {
-    padding-top: 65px;
-    margin-left: 40px;
+    padding-top: 78px;
+    margin-left: 70px;
     margin-bottom: 54px;
   }
 
@@ -28,9 +34,10 @@
   color: $font-color-basic-black;
   text-transform: uppercase;
   margin: 0 20px 39px;
+  width: 225px;
 
   @media(min-width: $tablet) {
-    margin: 54px 30px 65px 40px;
+    margin: 54px 30px 65px 70px;
     width: 323px;
     font-size: 20px;
     line-height: 30px;
@@ -55,23 +62,36 @@
   list-style-type: none;
 
   @media(min-width: $tablet) {
-    margin-left: 40px;
+    margin-left: 70px;
     margin-right: 40px;
   }
 
   @media(min-width: $desktop) {
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 }
 
 .selection__input-wrapper {
   display: flex;
   align-items: center;
+
+  @media(min-width: $tablet) {
+    margin-right: 35px;
+  }
+
+  @media(min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .selection__input-wrapper:not(:last-child) {
   margin-bottom: 14px;
+
+  @media(min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 
   @media(min-width: $desktop) {
     margin-bottom: 20px;
@@ -87,11 +107,13 @@
   @media(min-width: $tablet) {
     border: none;
     margin-left: 20px;
+    margin-right: 35px;
   }
 
   @media(min-width: $desktop) {
     padding-top: 0;
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -103,6 +125,7 @@
 
   @media(min-width: $tablet) {
     padding: 23px 27px 27px;
+    margin: 27px 40px 0 50px;
     border: 1px solid $border-color-basic-grey5;
   }
 
@@ -110,6 +133,7 @@
     padding-top: 25px;
     padding-left: 28px;
     padding-bottom: 25px;
+    margin-top: -4px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -139,35 +163,42 @@
   @media(min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 43px;
+    margin-bottom: 0;
+  }
+
+  @media(min-width: $desktop) {
+    margin-bottom: 70px;
   }
 }
 
 .selection__contacts {
   padding: 0;
-  margin: 45px 20px 24px;
+  margin: 37px 20px 24px;
 
   @media(min-width: $tablet) {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 80px 40px 65px 70px;
   }
 
   @media(min-width: $desktop) {
     display: grid;
     grid-template-columns: 600px 1fr;
-    gap: 85px;
+    gap: 50px;
     width: 1220px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
 }
 
 .selection__addons {
-  margin: 34px 20px;
+  margin: 30px 20px;
   display: flex;
   flex-direction: column;
 
   @media(min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin: 55px 66px 23px;
   }
 
   @media(min-width: $desktop) {
@@ -177,9 +208,14 @@
   }
 }
 
+.selection__addon {
+  @media(min-width: $tablet) {
+    display: flex;
+  }
+}
+
 .selection__label-checkbox {
-  display: flex;
-  align-items: center;
+  order: 2;
 }
 
 .selection__btn-wrapper {
@@ -190,14 +226,19 @@
     margin-right: 40px;
   }
 
+  @media(min-width: $tablet){
+    column-gap: 30px;
+  }
+
   @media(min-width: $desktop) {
     width: 1220px;
-    margin: 60px auto 79px;
+    margin: 17px auto 60px 80px
   }
 }
 
 .selection__submit-btn {
-  width: 100%;
+  width: calc(100% - 40px);
+  margin: 0 20px;
   background-color: $bg-color-basic-green;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -212,6 +253,7 @@
 
   @media(min-width: $tablet) {
     width: 284px;
+    margin: 0 30px 15px 30px;
     padding-top: 14px;
     padding-bottom: 14px;
     font-size: 20px;
@@ -232,6 +274,8 @@
   margin: 21px auto 32px;
 
   @media(min-width: $tablet) {
-    margin-left: 0;;
+    margin-left: 0;
+    font-size: 16px;
+    width: 178px;
   }
 }

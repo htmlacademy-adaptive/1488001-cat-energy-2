@@ -5,6 +5,9 @@
     content: "";
     display: block;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -54px;
     width: 30px;
     height: 30px;
     background-image: url("../../icons/icon-plus-mobile.svg");
@@ -24,7 +27,7 @@
   }
 
   @media(min-width: $tablet) {
-    padding: 233px 37px 27px;
+    padding: 233px 37px 43px;
     width: 249px;
     position: relative;
     box-sizing: unset;
@@ -64,6 +67,7 @@
   font-weight: 400;
   color: $font-color-basic-black;
   text-align: center;
+  margin-top: 79px;
   margin-bottom: 8px;
   text-transform: uppercase;
 
@@ -71,7 +75,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 134px;
-    margin: 0 auto 23px;
+    margin: 0 auto 19px;
   }
 }
 
@@ -80,6 +84,7 @@
   line-height: 16px;
   color: $font-color-special-darkgrey;
   text-align: center;
+  margin-top: 8px;
   margin-bottom: 21px;
 
   @media(min-width: $tablet) {

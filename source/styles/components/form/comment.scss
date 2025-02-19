@@ -1,25 +1,26 @@
 .comment {
-  margin: 38px 20px 23px;
-  width: 100%;
+  margin: 19px 20px 0;
+  width: calc(100% - 40px);
   height: 150px;
   resize: none;
   padding: 14px 14px 15px;
   border: 1px solid $border-color-basic-grey5;
 
   @media(min-width: $tablet) {
-    margin-left: 40px;
-    margin-right: 40px;
-     height: 175px;
+    margin: 87px 70px 20px;
+    width: calc(100% - 140px);
+    height: 175px;
   }
 
   @media(min-width: $desktop) {
     display: block;
     width: 1220px;
     height: 175px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
   }
 }
 
+.comment,
 .comment::placeholder {
   font-family: Oswald;
   font-weight: 400;
@@ -27,4 +28,10 @@
   line-height: 18px;
   color: $font-color-special-darkgrey;
   text-transform: uppercase;
+
+  @media(min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+
+  }
 }

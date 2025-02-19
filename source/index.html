@@ -105,8 +105,7 @@
       </h2>
       <div class="example__block">
         <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <div class="example__wrapper">
           <ul class="example-list">
@@ -125,12 +124,27 @@
           </div>
         </div>
         <div class="example__demo">
-          <!-- <div class="before-after-container">
-            <figure>
-              <div id="before_after"></div>
-            </figure>
-            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="before_after_slider" />
-          </div> -->
+          <div class="example__slider slider">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Ползунок слайдера.</span>
+            </button>
+            <div class="slider__wrapper-before">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--before" src="images/cat-before-tablet@1x.png" srcset="images/cat-before-tablet@2x.png 2x" width="280" height="256" alt="Кот Борис до корма Cat Energy Slim - тучный.">
+              </picture>
+            </div>
+            <div class="slider__wrapper-after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
+                <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--after" src="images/cat-after-tablet@1x.png" srcset="images/cat-after-tablet@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -42,6 +42,10 @@
   margin: 0 20px 35px;
   list-style-type: none;
 
+  @media(min-width: $tablet) {
+    margin: 0 70px 35px;
+  }
+
   @media(min-width: $desktop) {
     width: 896px;
     min-height: 288px;
@@ -51,10 +55,15 @@
 }
 
 .addons__card {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   border-top: 1px solid $border-color-basic-grey2;
   border-bottom: 1px solid $border-color-basic-grey2;
+
+  @media(min-width: $tablet) {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
 
   @media(min-width: $desktop) {
     display: flex;
@@ -85,11 +94,12 @@
   line-height: 16px;
   color: $font-color-basic-black;
   text-transform: uppercase;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 
   @media(min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0 0 16px;
   }
 }
 
@@ -121,6 +131,10 @@
   color: $bg-color-basic-white;
   margin-top: 15px;
 
+  @media(min-width: $tablet) {
+    margin-top: 13px;
+  }
+
   @media(min-width: $desktop) {
     width: 244px;
     height: 39px;
@@ -138,7 +152,8 @@
 
 .addons__banner {
   display: block;
-  margin: 0 30px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
   position: relative;
   min-height: 290px;
   background-image: image-set(

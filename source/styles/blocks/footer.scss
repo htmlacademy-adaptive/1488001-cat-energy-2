@@ -13,10 +13,10 @@
 .footer__invitation {
   display: flex;
   justify-content: space-between;
-  padding: 26px 12px;
+  padding: 25px 19px 27px;
 
   @media(min-width: $tablet) {
-    padding: 50px 20px 60px;
+    padding: 50px 30px 62px 70px;
     min-height: 80px;
   }
 
@@ -124,7 +124,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 96px;
+    padding-top: 55px;
     padding-bottom: 55px;
     margin: 0 30px;
   }
@@ -170,7 +170,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 40px;
+  margin: 15px 20px 40px;
   text-decoration: none;
   color: $font-color-special-darkgrey;
 

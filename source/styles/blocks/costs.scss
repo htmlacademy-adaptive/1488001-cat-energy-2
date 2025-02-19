@@ -1,7 +1,7 @@
 .costs {
   display: flex;
   width: 186px;
-  margin: 0 auto;
+  margin: 5px auto 0px;
 
   @media(min-width: $tablet) {
     display: block;
@@ -23,6 +23,7 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media(min-width: $tablet) {
     text-transform: uppercase;

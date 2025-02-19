@@ -30,13 +30,12 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bg-color-basic-white;
-  // box-sizing: unset;
-  // max-width: 187px;
+  max-width: 270px;
 
   @media(min-width: $tablet) {
     margin-left: 32px;
     padding: 0 40px 0;
-    // max-width: unset;
+    max-width: none;
   }
 
   @media(min-width: $desktop) {
