@@ -39,7 +39,7 @@
           <a class="nav__link nav__link--black" href="catalogue.html">Каталог продукции</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--black nav__link--current-black" href="#">Подбор программы</a>
+          <a class="nav__link nav__link--black nav__link--current-black">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -56,30 +56,30 @@
             <ul class="selection__inputs">
               <li class="selection__input-wrapper">
                 <label for id="name" class="label">Имя:*</label>
-                <input type="text" class="input" id="name" placeholder="Барсик">
+                <input type="text" class="input" id="name" name="name" value="Барсик" required>
               </li>
               <li class="selection__input-wrapper">
                 <label for id="weight" class="label">Вес (кг):*</label>
-                <input type="number" class="input" id="weight" placeholder="7">
+                <input type="number" class="input" id="weight" name="weight" value="7" required>
               </li>
               <li class="selection__input-wrapper">
                 <label class="label">Возраст (лет):</label>
-                <input type="number" class="input" placeholder="7">
+                <input type="number" class="input" name="age" value="7">
               </li>
             </ul>
             <div class="selection__radios-wrapper">
               <ul class="selection__radios">
-                <li class="selection__radio-wrapper">
-                  <label for id="loss" class="selection__radio-label label">Похудение</label>
-                  <input type="radio" class="radiobutton" id="loss" name="mass" value="loss" checked>
+                <li class="radio">
+                  <input type="radio" id="loss" class="visually-hidden radio__input" name="mass" value="loss" checked>
+                  <label for="loss" class="label radio__label">Похудение</label>
                 </li>
-                <li class="selection__radio-wrapper">
-                  <label class="selection__radio-label label">Набор массы</label>
-                  <input type="radio" class="radiobutton" name="mass" value="gain">
+                <li class="radio">
+                  <input type="radio" id="gain" class="visually-hidden radio__input" name="mass" value="gain">
+                  <label for="gain" class="label radio__label">Набор массы</label>
                 </li>
-                <li class="selection__radio-wrapper">
-                  <label class="selection__radio-label label">Не знаю (нужен ваш совет)</label>
-                  <input type="radio" class="radiobutton" name="mass" value="advice">
+                <li class="radio">
+                  <input type="radio" id="advice" class="visually-hidden radio__input" name="mass" value="advice">
+                  <label for="advice" class="label radio__label">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
@@ -91,13 +91,13 @@
           </div>
         </h2>
         <ul class="selection__contacts">
-          <li class="selection__input-wrapper">
-            <label for id="email" class="label">Email:*</label>
-            <input type="email" class="input" id="email"">
+          <li class="selection__input-wrapper input__email">
+            <label for="email" class="label">Email:*</label>
+            <input type="email" class="input" id="email" value="kuklachev@gmail.com" placeholder="Ваша э-почта" required>
           </li>
-          <li class="selection__input-wrapper">
-            <label class="label">Телефон:*</label>
-            <input type="phone" class="input">
+          <li class="selection__input-wrapper input__phone">
+            <label for="phone" class="label">Телефон:*</label>
+            <input type="tel" class="input" id="phone" value="9 (960) 900-60-90" placeholder="Ваш телефон" required>
           </li>
         </ul>
         <h2 class="selection__subtitle inner-subtitle">
@@ -105,30 +105,30 @@
             <span class="inner-subtitle__text">Комментарий</span>
           </div>
         </h2>
-        <textarea class="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         <h2 class="selection__subtitle inner-subtitle">
           <div class="inner-subtitle__wrapper">
             <span class="inner-subtitle__text">Дополнительно</span>
           </div>
         </h2>
-        <div class="selection__addons">
-          <div class="selection__addon">
-            <label class="selection__label-checkbox label">Сахарозаменитель</label>
-            <input type="checkbox" class="checkbox" name="sweetener" checked>
-          </div>
-          <div class="selection__addon">
-            <label class="selection__label-checkbox label">Питьевая вода</label>
-            <input type="checkbox" class="checkbox" name="water">
-          </div>
-          <div class="selection__addon">
-            <label class="selection__label-checkbox label">Молоко</label>
-            <input type="checkbox" class="checkbox" name="milk">
-          </div>
-          <div class="selection__addon">
-            <label class="selection__label-checkbox label">Витамины</label>
-            <input type="checkbox" class="checkbox" name="vitamins">
-          </div>
-        </div>
+        <ul class="selection__addons">
+          <li class="check">
+            <input type="checkbox" id="sweetener" class="visually-hidden check__input" name="addon" value="sweetener">
+            <label for="sweetener" class="label check__label">Сахарозаменитель</label>
+          </li>
+          <li class="check">
+            <input type="checkbox" id="water" class="visually-hidden check__input" name="addon" value="water">
+            <label for="water" class="label check__label">Питьевая вода</label>
+          </li>
+          <li class="check">
+            <input type="checkbox" id="milk" class="visually-hidden check__input" name="addon" value="milk">
+            <label for="milk" class="label check__label">Молоко</label>
+          </li>
+          <li class="check">
+            <input type="checkbox" id="vitamins" class="visually-hidden check__input" name="addon" value="vitamins">
+            <label for="vitamins" class="label check__label">Витамины</label>
+          </li>
+        </ul>
         <div class="selection__btn-wrapper">
           <button class="selection__submit-btn" type="submit">Отправить заявку</button>
           <span class="selection__note">* &mdash; Обязательные поля</span>
@@ -169,31 +169,30 @@
     <div class="footer__details-container">
       <div class="footer__details">
         <a href="index.html" class="footer__details-link" arialabel="Ссылка на главную страницу">
-          <img class="footer__logo" width="128" height="24" src="./images/logo.jpg" alt="Логотип Cat Energy.">
+          <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="./../icons/stack.svg#cat-energy-logo"></use>
+          </svg>
         </a>
         <div class="footer__socials-wrapper">
-          <ul class="footer__socials social-list">
-            <li class="social-list__item social-list__item--vk">
-              <a href="#" class="social-list__link social-list__link--vk"></a>
+          <ul class="footer__socials socials">
+            <li class="socials__item socials__item--vk">
+              <a href="#" class="socials__link socials__link--vk"></a>
               <span class="visually-hidden">Мы в ВКонтакте</span>
             </li>
-            <li class="social-list__item social-list__item--youtube">
-              <a href="#" class="social-list__link social-list__link--youtube"></a>
+            <li class="socials__item socials__item--youtube">
+              <a href="#" class="socials__link socials__link--youtube"></a>
               <span class="visually-hidden">Мы на YouTube</span>
             </li>
-            <li class="social-list__item social-list__item--telegram">
-              <a href="#" class="social-list__link social-list__link--telegram"></a>
+            <li class="socials__item socials__item--telegram">
+              <a href="#" class="socials__link socials__link--telegram"></a>
               <span class="visually-hidden">Мы в Телеграме</span>
             </li>
           </ul>
         </div>
         <div class="footer__copyright">
-          <a href="#" class="footer__link">
-            HTML Academy
+          <a href="#" class="footer__link">HTML Academy
             <svg class="footer__logo-link" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-                fill="#666666" />
+              <use href="./../icons/stack.svg#html-academy-logo"></use>
             </svg>
           </a>
         </div>

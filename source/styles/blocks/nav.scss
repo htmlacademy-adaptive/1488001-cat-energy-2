@@ -123,6 +123,16 @@
     font-size: 18px;
     line-height: 24px;
     color: $font-color-basic-black;
+
+    &:focus {
+      outline: none;
+      color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
+    }
+
+    &:active::after {
+      background-color: $bg-color-basic-white;
+      transform: scaleX(1);
+    }
   }
 
   @media(min-width: $desktop) {
@@ -131,11 +141,11 @@
     color: $bg-color-basic-white;
 
     &:hover {
-      opacity: 0.6;
+      color: rgba($color: $bg-color-basic-white, $alpha: 0.6);
     }
 
     &:focus {
-      opacity: 0.3;
+      color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
     }
 
     &:active::after {
@@ -181,11 +191,11 @@
   color: $font-color-basic-black;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($color: $font-color-basic-black, $alpha: 0.6);
   }
 
   &:focus {
-    opacity: 0.3;
+    color: rgba($color: $font-color-basic-black, $alpha: 0.3);
   }
 
   &:active {

@@ -16,14 +16,53 @@
   }
 
   &:hover {
-    border: 1px solid $border-color-basic-grey2;
+    border-color: $border-color-basic-grey2;
   }
 
   &:focus {
-    border: 2px solid $font-color-special-darkgrey;
+    border-color: transparent;
+    outline: 2px solid $font-color-special-darkgrey;
   }
 
   @media(min-width: $desktop) {
     height: 52px;
+  }
+}
+
+.input:invalid:not(:placeholder-shown) {
+  outline-color: $border-color-basic-red;
+}
+
+.input__email {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/icon-email.svg");
+    background-size: 20px 20px;
+  }
+}
+
+.input__phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/icon-phone.svg");
+    background-size: 20px 20px;
   }
 }

@@ -13,10 +13,10 @@
 .footer__invitation {
   display: flex;
   justify-content: space-between;
-  padding: 25px 19px 27px;
+  padding: 27px 19px;
 
   @media(min-width: $tablet) {
-    padding: 50px 30px 62px 70px;
+    padding: 83px 30px 62px 70px;
     min-height: 80px;
   }
 
@@ -27,7 +27,7 @@
     min-height: 199px;
     z-index: 20;
     background-color: $bg-color-basic-white;
-    padding: 62px 34px 60px 20px;
+    padding: 66px 34px 60px 20px;
     margin-left: -610px;
   }
 }
@@ -137,24 +137,38 @@
 }
 
 .footer__details-link {
-  &:hover .footer__logo {
-
-  }
-}
-
-.footer__logo {
-  width: 128px;
   display: block;
-  margin: 0 auto 10px;
+  width: 128px;
+  margin: 0 auto 20px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .footer__logo use {
+    color: $font-color-special-darkgrey1;
+  }
+
+  &:focus .footer__logo use {
+    color: $font-color-special-darkgrey1;
+  }
+
+  &:active .footer__logo use {
+    color: $font-color-basic-grey;
+  }
 
   @media(min-width: $tablet) {
     margin: 0;
   }
 }
 
+.footer__logo {
+  color: $font-color-basic-black1;
+}
+
 .footer__socials-wrapper {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-top: 1px solid $border-color-basic-grey;
   border-bottom: 1px solid $border-color-basic-grey;
 
@@ -170,12 +184,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 20px 40px;
+  margin: 19px 20px 40px;
   text-decoration: none;
   color: $font-color-special-darkgrey;
 
-  &:hover .footer__logo-link {
-    stroke: $bg-color-basic-green;
+  &:hover .footer__logo-link use,
+  &:focus .footer__logo-link use {
+    color: $bg-color-basic-green;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media(min-width: $tablet) {
@@ -184,8 +207,9 @@
 }
 
 .footer__logo-link {
+  color: $font-color-special-darkgrey2;
+
   @media(min-width: $tablet) {
-    fill: #666666;
     margin-left: 25px;
   }
 }

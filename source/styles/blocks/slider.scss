@@ -1,6 +1,6 @@
 .slider {
   width: 280px;
-  height: 260px;
+  height: 256px;
   position: relative;
   justify-self: center;
   touch-action: none;
@@ -112,7 +112,6 @@
     background-color: #eaeaea;
   }
 
-
   .slider__wrapper-before::after {
     content: "";
     width: 100%;
@@ -124,7 +123,6 @@
     z-index: -1;
   }
 }
-
 
 @media (min-width: $desktop) {
   .slider__wrapper-before {

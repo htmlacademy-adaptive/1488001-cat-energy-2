@@ -256,6 +256,14 @@
     width: 32px;
   }
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::after {
+    width: 32px;
+  }
+
   &:active {
     opacity: 0.3;
   }

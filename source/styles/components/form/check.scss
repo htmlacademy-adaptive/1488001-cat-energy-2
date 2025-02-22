@@ -1,0 +1,56 @@
+.check:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media(min-width: $desktop) {
+    margin-bottom: 18px;
+  }
+}
+.check__label {
+  padding-left: 45px;
+  padding-top: 4px;
+  position: relative;
+
+  @media(min-width: $tablet) {
+    padding-left: 60px;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid $border-color-basic-grey2;
+
+    @media(min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("../../icons/tick.svg");
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: none;
+
+    @media(min-width: $tablet) {
+      width: 24px;
+      height: 19px;
+      background-size: 24px 19px;
+    }
+  }
+}
+
+.check__input:checked + .check__label::after {
+  display: block;
+}
+
+.check__input:focus + .check__label::before {
+  border-color: $bg-color-basic-green2;
+}

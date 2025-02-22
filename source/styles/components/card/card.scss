@@ -59,6 +59,10 @@
   align-items: center;
   border: none;
 
+  &:focus {
+    outline-color: $bg-color-basic-green2;
+  }
+
   @media(min-width: $tablet) {
     position: absolute;
     top: 0;
@@ -104,6 +108,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+
+    &:focus {
+      outline-color: $bg-color-basic-green2;      
+    }
   }
 
   @media(min-width: $desktop) {
@@ -134,8 +142,13 @@
   line-height: 20px;
   color: $bg-color-basic-white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $bg-color-basic-green2;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {

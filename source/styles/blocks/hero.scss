@@ -251,5 +251,14 @@
     margin: 0;
     position: relative;
     z-index: 5;
+
+    &:focus {
+      outline: none;
+      background-color: $bg-color-basic-green2;
+    }
+
+    &:active {
+      color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
+    }
   }
 }

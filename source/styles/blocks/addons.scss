@@ -3,10 +3,11 @@
 
   @media(min-width: $tablet) {
     padding-top: 72px;
+    margin-bottom: 80px;
   }
 
   @media(min-width: $desktop) {
-    margin-bottom: 60px;
+    margin-bottom: 92px;
     padding-top: 0;
   }
 }
@@ -43,14 +44,13 @@
   list-style-type: none;
 
   @media(min-width: $tablet) {
-    margin: 0 70px 35px;
+    margin: 0 30px 68px;
   }
 
   @media(min-width: $desktop) {
     width: 896px;
     min-height: 288px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;;
   }
 }
 
@@ -62,15 +62,15 @@
 
   @media(min-width: $tablet) {
     padding-top: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 16px;
   }
 
   @media(min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 17px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 7px;;
   }
 }
 
@@ -79,11 +79,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 40px -5px;
   }
 
   @media(min-width: $desktop) {
     display: grid;
     grid-template-columns: 326px 283px 1fr;
+    margin: 0 0 -5px;
   }
 }
 
@@ -132,17 +134,22 @@
   margin-top: 15px;
 
   @media(min-width: $tablet) {
-    margin-top: 13px;
+    margin: 15px 38px 13px;
   }
 
   @media(min-width: $desktop) {
     width: 244px;
     height: 39px;
-    margin-top: 0;
+    margin: 0 0 13px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $bg-color-basic-green2;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
@@ -168,13 +175,17 @@
   text-decoration: none;
   cursor: pointer;
 
+  &:focus {
+    outline-color: $bg-color-basic-green2;
+  }
+
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 290px;
+    min-height: 100%;
     background-color: rgba(104, 183, 56, 0.85);
   }
 
@@ -190,13 +201,29 @@
     background-size: 78px 80px;
   }
 
+  @media(min-width: $tablet) {
+    min-height: 200px;
+    width: calc(100% - 60px);
+    margin: 0 30px;
+
+    &::after {
+      top: 57px;
+      left: 17%;
+    }
+  }
+
   @media(min-width: $desktop) {
     width: 245px;
     min-height: 288px;
     margin: 0;
     background-size: auto;
     background-position: unset;
+
+    &::after {
+      left: 50%;
+    }
   }
+
 }
 
 .addons__banner-text {
@@ -210,4 +237,17 @@
   text-align: center;
   position: relative;
   z-index: 5;
+
+  @media(min-width: $tablet) {
+    padding-top: 70px;
+    padding-bottom: 0;
+    padding-left: 42%;
+    box-sizing: unset;
+    text-align: left;
+  }
+
+  @media(min-width: $desktop) {
+    padding: 190px 0 0;
+    text-align: center;
+  }
 }

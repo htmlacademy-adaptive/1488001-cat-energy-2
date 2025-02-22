@@ -46,3 +46,7 @@
 .header__logo:active .header__logo-image {
   opacity: 0.6;
 }
+
+.header__logo:focus {
+  outline: none;
+}
