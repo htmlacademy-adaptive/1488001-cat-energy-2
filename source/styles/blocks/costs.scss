@@ -1,0 +1,40 @@
+.costs {
+  display: flex;
+  width: 186px;
+  margin: 5px auto 0;
+
+  @media (min-width: $tablet) {
+    display: block;
+    margin-right: 0;
+    margin-top: -7px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin: 55px 0 0;
+  }
+}
+
+.costs__title,
+.costs__content {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+  }
+}
+
+.costs__title {
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.label {
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

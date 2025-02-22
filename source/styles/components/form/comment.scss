@@ -1,0 +1,36 @@
+.comment {
+  margin: 19px 20px 0;
+  width: calc(100% - 40px);
+  height: 150px;
+  resize: none;
+  padding: 14px 14px 15px;
+  border: 1px solid $border-color-basic-grey5;
+
+  @media (min-width: $tablet) {
+    margin: 87px 70px 20px;
+    width: calc(100% - 140px);
+    height: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 1220px;
+    height: 175px;
+    margin: 0 auto 75px;
+  }
+}
+
+.comment,
+.comment::placeholder {
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-color-special-darkgrey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

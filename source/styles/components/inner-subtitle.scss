@@ -1,0 +1,45 @@
+.inner-subtitle {
+  padding: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  color: $font-color-basic-black;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $bg-color-basic-green;
+    z-index: -1;
+  }
+}
+
+.inner-subtitle__wrapper {
+  display: block;
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.inner-subtitle__text {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $bg-color-basic-white;
+  max-width: 280px;
+
+  @media (min-width: $tablet) {
+    margin-left: 32px;
+    padding: 0 40px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -40px;
+  }
+}

@@ -1,5 +1,52 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-image: url("./../../images/logo-text.svg");
+  background-position: center 24px;
+  background-size: 101px 18px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 65px;
+  z-index: 20;
+  border-bottom: 1px solid $border-color-basic-grey;
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 38px 0 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 72px 0 14px;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 21px;
+
+  @media (min-width: $tablet) {
+    top: 26px;
+    left: 30px;
+    z-index: 5;
+  }
+
+  @media (min-width: $desktop) {
+    top: 55px;
+    left: 0;
+  }
+}
+
+.header__logo:hover .header__logo-image,
+.header__logo:focus .header__logo-image {
+  opacity: 0.8;
+}
+
+.header__logo:active .header__logo-image {
+  opacity: 0.6;
+}
+
+.header__logo:focus {
+  outline: none;
 }

@@ -1,0 +1,154 @@
+.card {
+  padding: 21px 20px 24px;
+  border-bottom: 1px solid $border-color-basic-grey4;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 324px;
+    min-height: 430px;
+    padding: 0 37px 39px;
+    background-color: $border-color-basic-grey4;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      height: 71px;
+      width: 100%;
+      background-color: $bg-color-basic-white;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    min-height: 502px;
+  }
+}
+
+.card__container {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 417px;
+  min-height: 107px;
+  margin: 0 auto 13px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+    padding-top: 237px;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 222px;
+  }
+}
+
+.card__image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  &:focus {
+    outline-color: $bg-color-basic-green2;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 170px;
+  }
+}
+
+.card__info {
+  width: 140px;
+  min-height: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.card__name {
+  width: 76px;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+
+  @media (min-width: $tablet) {
+    width: 135px;
+    margin: 0 auto 18px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &:focus {
+      outline-color: $bg-color-basic-green2;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 26px;
+  }
+}
+
+.card__details {
+  width: 140px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+}
+
+.card__btn {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bg-color-basic-green;
+  text-transform: uppercase;
+  font-family: $Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-color-basic-white;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-basic-green2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    color: rgba($color: $bg-color-basic-white, $alpha: 0.3);
+  }
+}
