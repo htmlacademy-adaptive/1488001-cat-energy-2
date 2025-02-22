@@ -1,7 +1,7 @@
 .radio:not(:last-child) {
   margin-bottom: 21px;
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 18px;
   }
 }
@@ -11,7 +11,7 @@
   padding-top: 4px;
   position: relative;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-left: 60px;
   }
 
@@ -25,7 +25,7 @@
     border: 1px solid $border-color-basic-grey2;
     border-radius: 50%;
 
-    @media(min-width: $tablet){
+    @media (min-width: $tablet) {
       width: 40px;
       height: 40px;
     }
@@ -42,7 +42,7 @@
     border-radius: 50%;
     display: none;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       width: 18px;
       height: 18px;
       left: 10px;
@@ -58,6 +58,3 @@
 .radio__input:focus + .radio__label::before {
   border-color: $bg-color-basic-green2;
 }
-
-
-

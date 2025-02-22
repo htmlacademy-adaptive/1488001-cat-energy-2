@@ -1,11 +1,11 @@
 .nav {
   position: relative;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-left: 280px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding-left: 320px;
   }
 }
@@ -24,7 +24,7 @@
 .nav--closed .nav__toggle {
   display: block;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -33,7 +33,7 @@
   display: block;
   background-image: url("./../../icons/icon-burger-open.svg");
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
   list-style: none;
   border-top: 1px solid $border-color-basic-grey3;
 
-  @media(min-width: $tablet)  {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -57,12 +57,12 @@
 .nav--closed .nav__list {
   display: none;
 
-  @media(min-width: $tablet)  {
+  @media (min-width: $tablet) {
     display: flex;
     margin-right: 34px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin: 0;
   }
 }
@@ -75,13 +75,13 @@
   width: 100%;
   background-color: $bg-color-basic-white;
 
-  @media(min-width: $tablet)  {
+  @media (min-width: $tablet) {
     display: flex;
     position: static;
     margin-right: 26px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin: 0;
   }
 }
@@ -90,7 +90,7 @@
   border-bottom: 1px solid $border-color-basic-grey3;
   text-align: center;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     border-bottom: none;
   }
 }
@@ -118,7 +118,7 @@
     transform: scaleX(0);
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 0;
     font-size: 18px;
     line-height: 24px;
@@ -135,7 +135,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
     color: $bg-color-basic-white;
@@ -178,7 +178,7 @@
     color: $font-color-basic-black;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     &:hover,
     &:focus,
     &:active {

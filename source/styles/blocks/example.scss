@@ -3,13 +3,13 @@
   padding: 25px 20px 46px;
   overflow: hidden;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: -23px;
     padding: 25px 0 0;
     background-color: $bg-color-basic-white;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
     background-color: $bg-color-basic-grey;
   }
@@ -21,15 +21,15 @@
   font-size: 36px;
   line-height: 40px;
   color: $font-color-basic-black;
-  font-weight: normal;
+  font-weight: 400;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 30px 60px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 53px 0 75px;
     background-color: $bg-color-basic-white;
     margin: 0;
@@ -37,7 +37,7 @@
 }
 
 .example__title-text {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: block;
     width: 1220px;
     margin: 0 auto;
@@ -50,20 +50,20 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
     margin: 0 30px 55px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 465px;
     margin: 0 0 70px;
   }
 }
 
 .example__block {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     position: relative;
     width: 1220px;
     margin: 0 auto;
@@ -74,13 +74,13 @@
 }
 
 .example__wrapper {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     margin: 0 30px 99px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: block;
     width: 366px;
     margin: 0;
@@ -93,7 +93,7 @@
   margin: 0 auto;
   background-color: transparent;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     background-color: $bg-color-basic-grey2;
     width: 100%;
     height: auto;
@@ -111,16 +111,16 @@
     }
   }
 
-  @media(min-width: $desktop) {
-   position: absolute;
-   right: 0;
-   top: -135px;
-   background: none;
-   width: auto;
-   padding-bottom: 0;
+  @media (min-width: $desktop) {
+    position: absolute;
+    right: 0;
+    top: -135px;
+    background: none;
+    width: auto;
+    padding-bottom: 0;
 
-   &::after {
-    display: none;
-   }
+    &::after {
+      display: none;
+    }
   }
 }

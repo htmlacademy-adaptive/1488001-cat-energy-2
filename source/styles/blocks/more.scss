@@ -14,7 +14,7 @@
     background-size: 30px 30px;
     background-repeat: no-repeat;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       width: 60px;
       height: 60px;
       background-image: url("../../icons/icon-plus-tablet.svg");
@@ -26,7 +26,7 @@
     }
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 233px 37px 43px;
     width: 249px;
     position: relative;
@@ -46,7 +46,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     box-sizing: border-box;
     width: 245px;
     min-height: 430px;
@@ -55,7 +55,7 @@
 }
 
 .more__details {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     flex-grow: 1;
   }
 }
@@ -71,7 +71,7 @@
   margin-bottom: 8px;
   text-transform: uppercase;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
     width: 134px;
@@ -87,7 +87,7 @@
   margin-top: 8px;
   margin-bottom: 21px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 18px;
     width: 170px;
@@ -119,7 +119,7 @@
     outline: none;
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0;
   }
 }

@@ -1,13 +1,13 @@
 .news {
   margin: 0 0 40px;
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 87px;
   }
 }
 
 .news__wrapper {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
   }
@@ -18,13 +18,13 @@
   line-height: 26px;
   margin: 0 0 32px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 66px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 72px;
@@ -39,14 +39,14 @@
   margin: 0 20px 24px;
   text-align: center;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 24px;
     line-height: 32px;
     width: 632px;
     margin: 0 auto 25px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     font-size: 24px;
     line-height: 32px;
     width: auto;
@@ -56,13 +56,13 @@
 .news__form {
   margin: 0 20px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     width: 632px;
     margin: 0 auto;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 752px;
   }
 }
@@ -82,7 +82,7 @@
     outline: none;
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 59.5%;
 
     &:hover {
@@ -95,7 +95,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 590px;
   }
 }
@@ -119,7 +119,7 @@
   color: $bg-color-basic-white;
   border: none;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 40.5%;
     height: 56px;
 
@@ -137,4 +137,3 @@
     }
   }
 }
-

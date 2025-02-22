@@ -7,11 +7,11 @@
   flex-wrap: wrap;
   margin: 0 auto;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 10px 0 0 38px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 5px 0 0 38px;
   }
 }

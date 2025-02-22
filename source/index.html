@@ -9,8 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -33,7 +33,7 @@
       </button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link nav__link--current">Главная</a>
+          <a class="nav__link nav__link--current" href="#">Главная</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="catalogue.html">Каталог продукции</a>
@@ -140,7 +140,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
-                <source media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__image slider__image--after" src="images/cat-after-tablet@1x.png" srcset="images/cat-after-tablet@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
               </picture>
             </div>
@@ -182,7 +182,7 @@
     </div>
     <div class="footer__details-container">
       <div class="footer__details">
-        <a href="#" class="footer__details-link" arialabel="Ссылка на главную страницу">
+        <a class="footer__details-link" href="#" aria-label="Ссылка на главную страницу">
           <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="./../icons/stack.svg#cat-energy-logo"></use>
           </svg>
@@ -190,21 +190,24 @@
         <div class="footer__socials-wrapper">
           <ul class="footer__socials socials">
             <li class="socials__item socials__item--vk">
-              <a href="#" class="socials__link socials__link--vk"></a>
-              <span class="visually-hidden">Мы в ВКонтакте</span>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
             </li>
             <li class="socials__item socials__item--youtube">
-              <a href="#" class="socials__link socials__link--youtube"></a>
-              <span class="visually-hidden">Мы на YouTube</span>
+              <a class="socials__link socials__link--youtube" href="#">
+                <span class="visually-hidden">Мы на YouTube</span>
+              </a>
             </li>
             <li class="socials__item socials__item--telegram">
-              <a href="#" class="socials__link socials__link--telegram"></a>
-              <span class="visually-hidden">Мы в Телеграме</span>
+              <a class="socials__link socials__link--telegram" href="#">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="footer__copyright">
-          <a href="#" class="footer__link">HTML Academy
+          <a class="footer__link" href="#">HTML Academy
             <svg class="footer__logo-link" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="./../icons/stack.svg#html-academy-logo"></use>
             </svg>

@@ -3,7 +3,7 @@
   text-align: center;
   margin-bottom: 20px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0 auto;
     position: relative;
     width: 709px;
@@ -16,12 +16,13 @@
       content: "";
       background-repeat: no-repeat;
       background-position: 0 0;
-      background-image: image-set(
-        url("../../images/index-can-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/index-can-tablet@2x.webp") type("image/webp") 2x,
-        url("../../images/index-can-tablet@1x.png") type("image/png") 1x,
-        url("../../images/index-can-tablet@2x.png") type("image/png") 2x
-      );
+      background-image:
+        image-set(
+          url("../../images/index-can-tablet@1x.webp") type("image/webp") 1x,
+          url("../../images/index-can-tablet@2x.webp") type("image/webp") 2x,
+          url("../../images/index-can-tablet@1x.png") type("image/png") 1x,
+          url("../../images/index-can-tablet@2x.png") type("image/png") 2x
+        );
       background-size: 709px 609px;
       width: 709px;
       height: 609px;
@@ -32,7 +33,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: auto;
     padding: 0;
     margin-bottom: 82px;
@@ -45,12 +46,13 @@
       bottom: unset;
       top: -115px;
       background-color: #424147;
-      background-image: image-set(
-        url("../../images/index-cat-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/index-cat-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/index-cat-desktop@1x.jpg") type("image/jpeg") 1x,
-        url("../../images/index-cat-desktop@2x.jpg") type("image/jpeg") 2x
-      );
+      background-image:
+        image-set(
+          url("../../images/index-cat-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index-cat-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index-cat-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../images/index-cat-desktop@2x.jpg") type("image/jpeg") 2x
+        );
       background-size: auto 100%;
       background-position: right center;
       z-index: 1;
@@ -73,7 +75,7 @@
 }
 
 .hero__block {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
     padding-top: 70px;
@@ -83,13 +85,13 @@
     &::before {
       content: "";
       background-repeat: no-repeat;
-      background-size: 0 0;
-      background-image: image-set(
-        url("../../images/index-can-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/index-can-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/index-can-desktop@1x.png") type("image/png") 1x,
-        url("../../images/index-can-desktop@2x.png") type("image/png") 2x
-      );
+      background-image:
+        image-set(
+          url("../../images/index-can-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index-can-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index-can-desktop@1x.png") type("image/png") 1x,
+          url("../../images/index-can-desktop@2x.png") type("image/png") 2x
+        );
       background-size: 552px 499px;
       width: 552px;
       height: 499px;
@@ -107,7 +109,7 @@
   position: relative;
   margin-bottom: 3px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 0;
   }
 
@@ -121,16 +123,17 @@
     height: 270px;
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-image: image-set(
-      url("../../images/index-can-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/index-can-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/index-can-mobile@1x.png") type("image/png") 1x,
-      url("../../images/index-can-mobile@2x.png") type("image/png") 2x
-    );
+    background-image:
+      image-set(
+        url("../../images/index-can-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index-can-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index-can-mobile@1x.png") type("image/png") 1x,
+        url("../../images/index-can-mobile@2x.png") type("image/png") 2x
+      );
     background-size: 280px 270px;
     z-index: 10;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       display: none;
     }
   }
@@ -140,12 +143,11 @@
   padding: 27px 0 152px;
   position: relative;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     color: $font-color-basic-black;
     padding: 39px 0 0;
- }
+  }
 
-  // Картинка кота
   &::before {
     content: "";
     position: absolute;
@@ -156,27 +158,27 @@
     background-color: #424147;
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: image-set(
-      url("../../images/index-cat-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/index-cat-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/index-cat-mobile@1x.jpg") type("image/jpeg") 1x,
-      url("../../images/index-cat-mobile@2x.jpg") type("image/jpeg") 2x
-    );
+    background-image:
+      image-set(
+        url("../../images/index-cat-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index-cat-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index-cat-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/index-cat-mobile@2x.jpg") type("image/jpeg") 2x
+      );
     background-size: auto 100%;
     z-index: 1;
 
-    @media(min-width: $tablet) {
-       background: none;
-       width: 0;
-       height: 0;
+    @media (min-width: $tablet) {
+      background: none;
+      width: 0;
+      height: 0;
     }
 
-    @media(min-width: $desktop) {
+    @media (min-width: $desktop) {
       padding: 0;
     }
   }
 
-  // Оверлей над картинкой с котом
   &::after {
     content: "";
     position: absolute;
@@ -188,11 +190,11 @@
     opacity: 0.85;
     z-index: 3;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       background: none;
       width: 0;
       height: 0;
-   }
+    }
   }
 }
 
@@ -202,7 +204,7 @@
   position: relative;
   z-index: 7;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0 0 39px;
     width: 416px;
     text-align: left;
@@ -221,7 +223,7 @@
   position: relative;
   z-index: 7;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     width: 283px;
@@ -243,7 +245,7 @@
   text-decoration: none;
   margin: 0 20px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 14px 25px 14px 27px;
     font-size: 20px;
     line-height: 26px;

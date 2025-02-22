@@ -1,15 +1,15 @@
 .costs {
   display: flex;
   width: 186px;
-  margin: 5px auto 0px;
+  margin: 5px auto 0;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: block;
     margin-right: 0;
     margin-top: -7px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     width: 327px;
@@ -25,7 +25,7 @@
   font-weight: 400;
   text-transform: uppercase;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     text-transform: uppercase;
     font-size: 20px;
     text-align: right;
@@ -34,7 +34,7 @@
 }
 
 .costs__title {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: 10px;
   }
 }

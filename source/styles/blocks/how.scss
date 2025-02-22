@@ -3,11 +3,11 @@
   margin: 0 21px;
   padding-bottom: 49px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 28px 20px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
     width: 1220px;
     margin: 0 auto;
@@ -20,15 +20,15 @@
   font-size: 36px;
   line-height: 40px;
   color: $font-color-basic-black;
-  font-weight: normal;
+  font-weight: 400;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 70px 10px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 73px;
     margin-left: 0;
   }
@@ -39,7 +39,7 @@
   margin: 0;
   list-style: none;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 87px 157px;
@@ -48,7 +48,7 @@
     counter-reset: how-item;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1225px;
     column-gap: 75px;
   }
@@ -64,16 +64,16 @@
   box-sizing: border-box;
   padding-top: 3px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 227px;
     min-height: 210px;
-    padding: 111px 0 0 0;
+    padding: 111px 0 0;
     font-size: 16px;
     line-height: 24px;
     counter-increment: how-item;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 250px;
     min-height: 236px;
   }
@@ -90,7 +90,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       width: 80px;
       height: 80px;
     }
@@ -116,7 +116,7 @@
     background-size: 26px 31px;
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     &::after {
       content: counter(how-item);
       min-width: 112px;
@@ -131,64 +131,40 @@
       line-height: 200px;
       color: $bg-color-basic-grey;
       z-index: -1;
-
     }
 
-    // &:nth-child(1)::after {
-    //   content: "1";
-    // }
-
     &:nth-child(2)::after {
-      // content: "2";
       right: -21px;
     }
 
     &:nth-child(3)::after {
-      // content: "3";
       right: -21px;
     }
 
     &:nth-child(4)::after {
-      // content: "4";
       right: -23px;
-    }
-
-    &:nth-child(5)::after {
-      // content: "5";
-    }
-
-    &:nth-child(6)::after {
-      // content: "6";
-    }
-
-    &:nth-child(7)::after {
-      // content: "7";
-    }
-
-    &:nth-child(8)::after {
-      // content: "8";
     }
   }
 
-  @media(min-width: $desktop) {
-    &:nth-child(1)::after{
+  @media (min-width: $desktop) {
+    &:nth-child(1)::after {
       right: 23px;
     }
 
-    &:nth-child(2)::after{
+    &:nth-child(2)::after {
       right: 5px;
     }
 
-    &:nth-child(3)::after{
+    &:nth-child(3)::after {
       right: 3px;
     }
 
-    &:nth-child(4)::after{
+    &:nth-child(4)::after {
       right: 5px;
     }
   }
 }
 
-.how__item:last-child{
+.how__item:last-child {
   margin-bottom: 0;
 }

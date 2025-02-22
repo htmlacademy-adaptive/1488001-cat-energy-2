@@ -1,12 +1,12 @@
 .addons {
   margin: 0 0 43px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-top: 72px;
     margin-bottom: 80px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 92px;
     padding-top: 0;
   }
@@ -17,20 +17,20 @@
   line-height: 26px;
   margin: 0 0 30px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 80px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
   }
 }
 
 .addons__wrapper {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
     display: flex;
@@ -43,14 +43,14 @@
   margin: 0 20px 35px;
   list-style-type: none;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0 30px 68px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 896px;
     min-height: 288px;
-    margin: 0;;
+    margin: 0;
   }
 }
 
@@ -60,29 +60,29 @@
   border-top: 1px solid $border-color-basic-grey2;
   border-bottom: 1px solid $border-color-basic-grey2;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-top: 22px;
     padding-bottom: 16px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 7px;;
+    padding-bottom: 7px;
   }
 }
 
 .addons__info {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 40px -5px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 326px 283px 1fr;
     margin: 0 0 -5px;
@@ -91,14 +91,14 @@
 
 .addons__name {
   font-family: $Oswald;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: $font-color-basic-black;
   text-transform: uppercase;
   margin: 0 0 12px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     margin: 0 0 16px;
@@ -112,7 +112,7 @@
   line-height: 14px;
   color: $font-color-special-darkgrey;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
     gap: 49px;
@@ -133,11 +133,11 @@
   color: $bg-color-basic-white;
   margin-top: 15px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 15px 38px 13px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 244px;
     height: 39px;
     margin: 0 0 13px;
@@ -163,12 +163,13 @@
   margin: 0 20px;
   position: relative;
   min-height: 290px;
-  background-image: image-set(
+  background-image:
+    image-set(
       url("../../images/catalogue-cat-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/catalogue-cat-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/catalogue-cat-mobile@1x.jpg") type("image/jpeg") 1x,
       url("../../images/catalogue-cat-mobile@2x.jpg") type("image/jpeg") 2x
-  );
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +202,7 @@
     background-size: 78px 80px;
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     min-height: 200px;
     width: calc(100% - 60px);
     margin: 0 30px;
@@ -212,7 +213,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 245px;
     min-height: 288px;
     margin: 0;
@@ -223,7 +224,6 @@
       left: 50%;
     }
   }
-
 }
 
 .addons__banner-text {
@@ -238,7 +238,7 @@
   position: relative;
   z-index: 5;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-top: 70px;
     padding-bottom: 0;
     padding-left: 42%;
@@ -246,7 +246,7 @@
     text-align: left;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 190px 0 0;
     text-align: center;
   }

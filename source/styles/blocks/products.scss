@@ -1,5 +1,5 @@
 .products {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto 72px;
   }
@@ -10,13 +10,13 @@
   margin-left: 20px;
   padding-top: 0;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-left: 30px;
     margin-bottom: 92px;
     padding-top: 30px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-left: 0;
     margin-bottom: 89px;
   }
@@ -28,18 +28,17 @@
   list-style: none;
   border-bottom: 1px solid $border-color-basic-grey4;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 60px;
-    row-gap: 70px;
+    gap: 70px 60px;
     padding: 0 30px;
     width: 768px;
     margin: 0 auto;
     border-bottom: none;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding: 0;
     width: 1220px;
     column-gap: 80px;

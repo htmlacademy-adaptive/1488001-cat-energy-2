@@ -8,13 +8,13 @@
   z-index: 20;
   border-bottom: 1px solid $border-color-basic-grey;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     background: none;
     padding: 38px 0 0;
     border-bottom: none;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
     padding: 72px 0 14px;
@@ -26,13 +26,13 @@
   top: 13px;
   left: 21px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     top: 26px;
     left: 30px;
     z-index: 5;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     top: 55px;
     left: 0;
   }

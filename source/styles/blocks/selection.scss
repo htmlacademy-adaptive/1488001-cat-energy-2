@@ -1,29 +1,29 @@
 .selection__form {
   margin-bottom: -16px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: 23px;
   }
 }
 
 .selection__title {
   padding-top: 27px;
-  margin: 0 20px 37px ;
+  margin: 0 20px 37px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-top: 78px;
     margin-left: 70px;
     margin-bottom: 54px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
   }
 }
 
 .selection__basics-wrapper {
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto -27px;
   }
@@ -38,25 +38,25 @@
   margin: 0 20px 39px;
   width: 225px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 54px 30px 70px 70px;
     width: 323px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-left: 0;
     margin-bottom: 64px;
   }
 }
 
 .selection__basics {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: 50px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -68,12 +68,12 @@
   margin: 0 20px 24px;
   list-style-type: none;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-left: 70px;
     margin-right: 40px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -85,14 +85,48 @@
   align-items: center;
   margin-bottom: 14px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-right: 35px;
     margin-bottom: 26px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+.selection__input-email {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/icon-email.svg");
+    background-size: 20px 20px;
+  }
+}
+
+.selection__input-phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/icon-phone.svg");
+    background-size: 20px 20px;
   }
 }
 
@@ -102,13 +136,13 @@
   border-top: 1px solid $border-color-basic-grey;
   border-bottom: 1px solid $border-color-basic-grey;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     border: none;
     margin-left: 20px;
     margin-right: 35px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -122,13 +156,13 @@
   display: flex;
   flex-direction: column;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding: 23px 27px 27px;
     margin: 27px 40px 0 50px;
     border: 1px solid $border-color-basic-grey5;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     padding-top: 25px;
     padding-left: 28px;
     padding-bottom: 32px;
@@ -142,14 +176,14 @@
   font-size: 24px;
   line-height: 26px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-top: 43px;
     margin-bottom: 0;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     margin-bottom: 75px;
   }
 }
@@ -158,11 +192,11 @@
   padding: 0;
   margin: 37px 20px 22px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 80px 40px 67px 70px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 568px 1fr;
     gap: 84px;
@@ -176,14 +210,14 @@
   margin: 35px 20px 38px;
   list-style-type: none;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 21px 50px;
     margin: 55px 66px 36px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 77px;
     width: 1220px;
@@ -192,18 +226,18 @@
 }
 
 .selection__btn-wrapper {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 40px;
     margin-right: 40px;
   }
 
-  @media(min-width: $tablet){
+  @media (min-width: $tablet) {
     column-gap: 30px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 17px auto 60px;
     column-gap: 80px;
@@ -218,7 +252,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
-  font-family: Oswald;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -231,9 +265,9 @@
     background-color: $bg-color-basic-green2;
   }
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 284px;
-    margin: 0 30px 15px 30px;
+    margin: 0 30px 15px;
     padding-top: 14px;
     padding-bottom: 14px;
     font-size: 20px;
@@ -252,7 +286,7 @@
     }
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 570px;
     margin: 0;
   }
@@ -266,7 +300,7 @@
   width: 153px;
   margin: 21px auto 32px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-left: 0;
     font-size: 16px;
     width: 178px;
