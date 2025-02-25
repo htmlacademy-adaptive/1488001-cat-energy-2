@@ -102,7 +102,7 @@
 
     &::before {
       content: "";
-      height: 135px;
+      height: 146px;
       width: 100%;
       position: absolute;
       top: 0;
@@ -118,6 +118,10 @@
     background: none;
     width: auto;
     padding-bottom: 0;
+
+    &::before {
+      height: 135px;
+    }
 
     &::after {
       display: none;
